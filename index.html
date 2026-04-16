@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -39,6 +41,7 @@
   "sameAs":["https://wa.me/919176463826","https://www.instagram.com/TheArchDuo"]
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -54,8 +57,11 @@
   ]
 }
 </script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KY74EZZZ9H"></script>
+
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KY74EZZZ9H');</script>
+
 <style>
 :root{
   --paper:    #f9f4ee;
@@ -84,6 +90,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-b);
      font-weight:300;-webkit-font-smoothing:antialiased;
      overflow-x:hidden;cursor:none;}
 ::selection{background:var(--terra);color:#fff;}
+
 /* CURSOR */
 #cd{position:fixed;z-index:9999;pointer-events:none;
     width:6px;height:6px;border-radius:50%;background:var(--ink);
@@ -95,6 +102,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-b);
     transition:width .4s var(--eout),height .4s var(--eout),border-color .3s;}
 .h-on #cd{width:4px;height:4px;background:var(--terra);}
 .h-on #cr{width:52px;height:52px;border-color:var(--terra);}
+
 /* LOADER */
 #loader{position:fixed;inset:0;z-index:9990;background:var(--paper);
         display:flex;align-items:center;justify-content:center;
@@ -112,6 +120,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-b);
 @keyframes liftUp{to{transform:translateY(0);}}
 @keyframes barGrow{to{width:280px;}}
 @keyframes fadeIn{to{opacity:1;}}
+
 /* URGENCY BANNER */
 #urgencyBanner{
   background:var(--terra);color:#fff;
@@ -124,6 +133,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-b);
 .ub-close{position:absolute;right:16px;top:50%;transform:translateY(-50%);
           background:none;border:none;color:rgba(255,255,255,.6);
           font-size:.85rem;cursor:none;padding:4px;}
+
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:66px;
     padding:0 clamp(24px,5vw,72px);
@@ -160,6 +170,7 @@ nav.shifted{top:40px;}
 .mob-nav a{font-family:var(--f-d);font-size:clamp(1.8rem,7vw,2.8rem);
            font-weight:300;color:var(--ink);text-decoration:none;transition:color .25s;}
 .mob-nav a:hover{color:var(--terra);}
+
 /* FLOATING CTA */
 #floatCta{
   position:fixed;bottom:32px;right:32px;z-index:8000;
@@ -195,6 +206,7 @@ nav.shifted{top:40px;}
 }
 #floatClose.show{display:flex;}
 #floatClose:hover{opacity:1;}
+
 /* REVEAL */
 [data-r]{opacity:0;transform:translateY(26px);
          transition:opacity 1.1s var(--eout),transform 1.1s var(--eout);}
@@ -205,6 +217,7 @@ nav.shifted{top:40px;}
 [data-r][data-d="4"]{transition-delay:.52s;}
 [data-r][data-d="5"]{transition-delay:.65s;}
 [data-r][data-d="6"]{transition-delay:.78s;}
+
 /* SHARED */
 .wrap{max-width:1160px;margin:0 auto;padding:0 clamp(24px,5vw,72px);}
 .sec{padding:clamp(88px,12vw,160px) 0;}
@@ -218,6 +231,7 @@ nav.shifted{top:40px;}
            color:var(--ink-60);max-width:520px;}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
          overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
 /* ══ HERO ══ */
 .hero{min-height:100vh;display:grid;grid-template-rows:1fr auto;
       padding-top:66px;position:relative;}
@@ -230,6 +244,7 @@ nav.shifted{top:40px;}
              text-transform:uppercase;color:var(--ink-60);margin-bottom:28px;
              display:flex;align-items:center;gap:18px;}
 .hero-kicker::before{content:'';width:36px;height:1px;background:var(--terra);}
+
 /* Outcome badge */
 .hero-outcome-strip{
   display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px;
@@ -244,6 +259,7 @@ nav.shifted{top:40px;}
 .hoc-check{width:14px;height:14px;border-radius:50%;background:var(--terra);
            display:inline-flex;align-items:center;justify-content:center;
            font-size:.5rem;color:#fff;flex-shrink:0;}
+
 .hero-h1{font-family:var(--f-d);font-size:clamp(4.2rem,10.5vw,11rem);
          font-weight:300;line-height:.92;letter-spacing:-.028em;
          color:var(--ink);margin-bottom:28px;}
@@ -252,11 +268,13 @@ nav.shifted{top:40px;}
 .hero-h1 .tc{color:var(--terra);}
 .hero-sub{font-size:1.1rem;font-weight:300;line-height:1.85;color:var(--ink-60);
           max-width:480px;margin-bottom:18px;}
+
 /* Outcome micro-stats */
 .hero-outcomes{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:28px;}
 .ho-item{display:flex;flex-direction:column;}
 .ho-n{font-family:var(--f-d);font-size:1.6rem;font-weight:300;color:var(--terra);line-height:1;}
 .ho-l{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40);margin-top:3px;}
+
 /* Pricing hint */
 .hero-pricing-hint{
   display:inline-flex;align-items:center;gap:10px;
@@ -267,6 +285,7 @@ nav.shifted{top:40px;}
 }
 .hero-pricing-hint strong{color:var(--ink);font-weight:400;}
 .pricing-dot{width:5px;height:5px;border-radius:50%;background:var(--ink-20);flex-shrink:0;}
+
 /* Social proof */
 .hero-proof{display:flex;align-items:center;gap:18px;margin-bottom:36px;flex-wrap:wrap;}
 .hp-avatars{display:flex;}
@@ -281,6 +300,7 @@ nav.shifted{top:40px;}
 .hp-text{font-size:.82rem;font-weight:300;color:var(--ink-60);}
 .hp-text strong{color:var(--ink);font-weight:400;}
 .stars{color:var(--terra);font-size:.75rem;letter-spacing:.08em;}
+
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:16px;}
 .btn-fill{display:inline-block;padding:15px 38px;background:var(--terra);color:#fff;
           font-size:.75rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;
@@ -297,14 +317,17 @@ nav.shifted{top:40px;}
 .btn-line::after{content:'↗';font-size:1rem;transition:transform .3s var(--ease);}
 .btn-line:hover{color:var(--ink);}
 .btn-line:hover::after{transform:translate(2px,-2px);}
+
 /* CTA sub-hint */
 .cta-hint{font-size:.68rem;letter-spacing:.1em;color:var(--ink-40);margin-bottom:20px;}
+
 .hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;}
 .chip{padding:10px 20px;border:1px solid var(--rule);font-size:.68rem;font-weight:400;
       letter-spacing:.15em;text-transform:uppercase;color:var(--ink-60);
       text-decoration:none;transition:all .3s;}
 .chip:hover{border-color:var(--terra);color:var(--terra);}
 .chip.active{background:var(--terra);color:#fff;border-color:var(--terra);}
+
 .hero-bar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);}
 .hb-item{padding:30px clamp(20px,3vw,48px);border-right:1px solid var(--rule);}
 .hb-item:last-child{border-right:none;}
@@ -312,6 +335,7 @@ nav.shifted{top:40px;}
       color:var(--ink);display:block;line-height:1;margin-bottom:7px;}
 .hb-l{font-size:.65rem;font-weight:400;letter-spacing:.22em;
       text-transform:uppercase;color:var(--ink-40);}
+
 /* ══ GALLERY ══ */
 .gallery-sec{background:var(--ink);overflow:hidden;}
 .gallery-head{text-align:center;padding:clamp(64px,8vw,100px) 0 48px;}
@@ -356,6 +380,7 @@ nav.shifted{top:40px;}
 .gallery-cta::after{content:'↗';transition:transform .3s var(--ease);}
 .gallery-cta:hover{color:var(--terra-lt);}
 .gallery-cta:hover::after{transform:translate(2px,-2px);}
+
 /* ══ SERVICES ══ */
 .svc-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:76px;}
 .svc-row{display:grid;grid-template-columns:48px 1fr 32px;align-items:start;gap:36px;
@@ -374,6 +399,7 @@ nav.shifted{top:40px;}
 .svc-arr{font-size:1.2rem;color:var(--ink-40);padding-top:6px;
          transition:transform .4s var(--eout),color .3s;}
 .svc-row:hover .svc-arr{transform:translate(3px,-3px);color:var(--terra);}
+
 /* ══ PREDICTOR / LEAD FUNNEL ══ */
 .predictor-sec{background:var(--ink);padding:clamp(80px,10vw,140px) 0;}
 .predictor-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:92px;align-items:start;}
@@ -387,6 +413,7 @@ nav.shifted{top:40px;}
 .pred-promise{display:flex;flex-direction:column;gap:12px;}
 .pp-item{display:flex;align-items:center;gap:14px;font-size:.88rem;font-weight:300;color:rgba(249,244,238,.6);}
 .pp-dot{width:6px;height:6px;border-radius:50%;background:var(--terra);flex-shrink:0;}
+
 .pred-form{background:rgba(249,244,238,.04);border:1px solid rgba(249,244,238,.1);
            padding:clamp(28px,4vw,48px);}
 .pf-step{display:none;}
@@ -435,6 +462,7 @@ nav.shifted{top:40px;}
              transition:background .3s;}
 .btn-wa-pred:hover{background:var(--terra-dk);}
 .btn-wa-pred svg{width:18px;height:18px;fill:#fff;}
+
 /* ══ RESULTS ══ */
 .results-sec{background:var(--paper-2);}
 .results-head{margin-bottom:68px;}
@@ -461,6 +489,7 @@ nav.shifted{top:40px;}
            margin-top:16px;line-height:1;}
 .plc-score span{font-size:.7rem;font-family:var(--f-b);font-weight:300;color:var(--ink-40);
                 letter-spacing:.15em;text-transform:uppercase;}
+
 /* ══ TESTIMONIALS ══ */
 .testi-sec{background:var(--paper);}
 .testi-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:76px;}
@@ -479,6 +508,7 @@ nav.shifted{top:40px;}
 .tc-name{font-size:.88rem;font-weight:400;color:var(--ink);display:block;margin-bottom:2px;}
 .tc-detail{font-size:.72rem;font-weight:300;color:var(--terra);letter-spacing:.1em;}
 .tcard.parent{grid-column:span 1;border-left:2px solid var(--terra);}
+
 /* ══ FOR PARENTS ══ */
 .parents-sec{background:var(--ink);padding:clamp(80px,10vw,140px) 0;}
 .parents-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:92px;align-items:start;}
@@ -496,6 +526,7 @@ nav.shifted{top:40px;}
 .pg-title{font-family:var(--f-d);font-size:1.1rem;font-weight:400;color:#f9f4ee;
           margin-bottom:8px;letter-spacing:-.01em;}
 .pg-body{font-size:.88rem;font-weight:300;line-height:1.75;color:rgba(249,244,238,.45);}
+
 /* Parent WA CTA */
 .parents-cta-row{margin-top:36px;display:flex;flex-direction:column;gap:14px;}
 .btn-parents-wa{display:inline-flex;align-items:center;gap:12px;padding:14px 28px;
@@ -506,6 +537,7 @@ nav.shifted{top:40px;}
 .btn-parents-wa svg{width:17px;height:17px;fill:#fff;}
 .parents-assurance{font-size:.78rem;font-weight:300;color:rgba(249,244,238,.35);
                    font-style:italic;font-family:var(--f-d);}
+
 /* ══ FOUNDERS ══ */
 .about-bg{background:var(--paper-2);}
 .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:92px;}
@@ -531,6 +563,7 @@ nav.shifted{top:40px;}
 .f-creds{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;}
 .f-cred{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
         padding:5px 12px;border:1px solid var(--rule);color:var(--ink-40);}
+
 /* ══ NATA ══ */
 .nata-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:92px;align-items:start;}
 .nata-list{margin-top:44px;display:flex;flex-direction:column;}
@@ -566,6 +599,7 @@ nav.shifted{top:40px;}
                   font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
                   color:var(--terra);text-decoration:none;}
 .prog-b .prog-cta:hover{text-decoration:underline;}
+
 /* ══ SOFTWARE ══ */
 .sw-bg{background:var(--paper-2);}
 .sw-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:68px;}
@@ -576,6 +610,7 @@ nav.shifted{top:40px;}
          display:block;margin-bottom:13px;line-height:1;}
 .sw h3{font-size:.88rem;font-weight:400;color:var(--ink);margin-bottom:8px;}
 .sw p{font-size:.82rem;font-weight:300;line-height:1.65;color:var(--ink-60);}
+
 /* ══ MOCK TEST ══ */
 .test-sec{background:var(--paper);}
 .test-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px;}
@@ -674,10 +709,14 @@ nav.shifted{top:40px;}
 .exp-item{padding:14px 0;border-bottom:1px solid var(--rule);font-size:.9rem;font-weight:300;line-height:1.75;color:var(--ink-60);}
 .exp-item strong{color:var(--ink);font-weight:400;}
 .exp-item .exp-correct{color:var(--green-ok);}
+
 /* ══ DRAWING BOARD ══ */
 .draw-sec{background:var(--paper-2);}
-.draw-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px;}
-.draw-shell{border:1px solid var(--rule);overflow:hidden;}
+.draw-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:40px;}
+.tmpl-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:0;
+          padding:12px 0 16px;border-bottom:1px solid var(--rule);}
+.draw-shell{border:1px solid var(--rule);overflow:hidden;margin-top:0;}
+select{font-family:var(--f-b);}
 .draw-tb{display:flex;align-items:center;border-bottom:1px solid var(--rule);
          background:var(--paper-2);flex-wrap:wrap;}
 .tbg{display:flex;align-items:center;border-right:1px solid var(--rule);padding:0 2px;}
@@ -723,6 +762,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
      display:flex;justify-content:space-between;align-items:center;}
 .dst-l{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);}
 .dst-r{font-family:'Courier New',monospace;font-size:.68rem;color:var(--ink-40);}
+
 /* ══ WHY ══ */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
           background:var(--rule);border:1px solid var(--rule);}
@@ -732,6 +772,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
 .why-c h4{font-family:var(--f-d);font-size:1.2rem;font-weight:400;color:var(--ink);
           margin-bottom:11px;letter-spacing:-.01em;}
 .why-c p{font-size:.9rem;font-weight:300;line-height:1.8;color:var(--ink-60);}
+
 /* ══ FAQ ══ */
 .faq-sec{background:var(--paper-2);}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
@@ -774,6 +815,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
 .fcb-ph-icon{font-size:1rem;opacity:.4;}
 .fcb-ph-n{font-size:.82rem;font-weight:300;color:var(--ink-60);}
 .fcb-ph-n a{color:var(--ink);text-decoration:none;}
+
 /* ══ CONTACT ══ */
 .contact-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:92px;align-items:start;}
 .c-big{font-family:var(--f-d);font-size:clamp(3rem,7vw,6.8rem);font-weight:300;
@@ -793,6 +835,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
 .ct-b h5{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;
          color:var(--terra);margin-bottom:5px;}
 .ct-b p{font-size:.93rem;font-weight:300;color:var(--ink-60);line-height:1.55;}
+
 /* ══ FOOTER ══ */
 footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
 .ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:64px;}
@@ -808,6 +851,7 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
 .ft-rule{height:1px;background:rgba(249,244,238,.07);margin-bottom:26px;}
 .ft-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
 .ft-bot p{font-size:.65rem;letter-spacing:.1em;color:rgba(249,244,238,.22);font-weight:300;}
+
 /* ══ RESPONSIVE ══ */
 @media(max-width:960px){
   .nav-links,.nav-cta{display:none;} .ham{display:flex;}
@@ -843,11 +887,14 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
   .hero-outcomes{gap:18px;}
 }
 </style>
+
 </head>
 <body>
 <div id="cd"></div>
 <div id="cr"></div>
+
 <!-- LOADER -->
+
 <div id="loader" role="status" aria-label="Loading Ray Arch Academy">
   <div class="ld-w" aria-hidden="true">
     <span>R</span><span>A</span><span>Y</span><span>&nbsp;</span>
@@ -857,19 +904,25 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
   <div class="ld-bar"></div>
   <div class="ld-sub">Chennai · Architecture · NATA Excellence</div>
 </div>
+
 <!-- URGENCY BANNER -->
+
 <div id="urgencyBanner" role="banner" aria-label="Enrollment notice">
   <span>April 2026 batch —</span> only <span>4 seats remaining.</span> Batch starts in <span id="batchCountdown">calculating…</span>
   <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20reserve%20a%20seat%20for%20the%20April%202026%20batch%20before%20it%20fills%20up" target="_blank" rel="noopener">Reserve your seat →</a>
   <button class="ub-close" onclick="document.getElementById('urgencyBanner').style.display='none';document.querySelector('nav').style.top='0'" aria-label="Close">✕</button>
 </div>
+
 <!-- FLOATING CTA -->
+
 <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20crack%20NATA%202026%20and%20get%20into%20a%20top%20architecture%20college.%20Please%20share%20batch%20details" target="_blank" id="floatCta" aria-label="Join Ray Arch Academy on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   Crack NATA 2026
 </a>
 <button id="floatClose" aria-label="Dismiss" onclick="dismissFloat()">✕</button>
+
 <!-- NAV -->
+
 <header>
 <nav id="mainNav" role="navigation" aria-label="Main navigation" class="shifted">
   <a href="#home" class="nav-logo">Ray Arch Academy</a>
@@ -896,63 +949,77 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
   <a href="#faq" onclick="cM()">FAQ</a>
   <a href="#contact" onclick="cM()">Contact</a>
 </nav>
+
 <!-- HERO -->
+
 <main>
 <section class="hero" id="home" aria-label="Hero">
   <h1 class="sr-only">Best NATA Coaching in Chennai | Crack NATA 2026 | Ray Arch Academy, Tambaram</h1>
+
   <div class="hero-main">
     <div class="hero-kicker" data-r>Chennai · Tambaram · NATA 2026</div>
-    <!-- Outcome-driven proof chips -->
-    <div class="hero-outcome-strip" data-r data-d="1">
-      <span class="hoc"><span class="hoc-check">✓</span>100+ students cracked NATA</span>
-      <span class="hoc"><span class="hoc-check">✓</span>SPA · CEPT · NIT placements</span>
-      <span class="hoc"><span class="hoc-check">✓</span>April 2026 batch open</span>
-    </div>
-    <div class="hero-h1" role="heading" aria-level="2" data-r data-d="2">
-      Crack<br>
-      <span class="it tc">NATA.</span><br>
-      <span class="th">Get into</span><br>
-      architecture
-    </div>
-    <p class="hero-sub" data-r data-d="3">Chennai's most trusted NATA coaching institute. From drawing zero to 130+ scores — taught by practicing architects who know both the exam and the profession.</p>
-    <!-- Outcome micro-stats -->
-    <div class="hero-outcomes" data-r data-d="3">
-      <div class="ho-item"><span class="ho-n">148</span><span class="ho-l">Top NATA score</span></div>
-      <div class="ho-item"><span class="ho-n">100+</span><span class="ho-l">Students placed</span></div>
-      <div class="ho-item"><span class="ho-n">5+</span><span class="ho-l">Years of results</span></div>
-    </div>
-    <!-- Pricing hint -->
-    <div class="hero-pricing-hint" data-r data-d="3">
-      <strong>Programs from ₹18,000</strong>
-      <span class="pricing-dot" aria-hidden="true"></span>
-      <span>EMI available &nbsp;·&nbsp; No hidden fees</span>
-    </div>
-    <!-- Social proof with real student representation -->
-    <div class="hero-proof" data-r data-d="4">
-      <div class="hp-avatars" aria-hidden="true">
-        <!-- Silhouette-style initials representing real students -->
-        <div class="hp-avatar fallback" style="background:#e8ddd3;color:#a0785a;">P</div>
-        <div class="hp-avatar fallback" style="background:#dde3e8;color:#4a7c59;">A</div>
-        <div class="hp-avatar fallback" style="background:#e3dde8;color:#6a4a7c;">K</div>
-        <div class="hp-avatar fallback" style="background:#e8e3dd;color:#7c6b4a;">R</div>
-        <div class="hp-avatar fallback" style="background:#dde8e0;color:#4a7a5a;">M</div>
-      </div>
-      <div>
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p class="hp-text">Trusted by <strong>100+ students</strong> — placed in SPA, CEPT, NIT, Crescent &amp; more</p>
-      </div>
-    </div>
-    <!-- Primary CTA: Assessment funnel -->
-    <div class="hero-actions" data-r data-d="5">
-      <a href="#predictor" class="btn-fill primary-hero">Check My NATA Readiness →</a>
-      <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20crack%20NATA%202026.%20I%27d%20like%20to%20book%20a%20free%20consultation" target="_blank" class="btn-line" rel="noopener">Book Free Consultation</a>
-    </div>
-    <p class="cta-hint" data-r data-d="5">Takes 2 minutes · Free · No commitment required</p>
-    <div class="hero-chips" data-r data-d="6">
-      <a href="#mocktest" class="chip active">Try NATA Mock Test →</a>
-      <a href="#nata" class="chip">View Programs &amp; Fees →</a>
-      <a href="#drawboard" class="chip">Open Drawing Board →</a>
-    </div>
+
+```
+<!-- Outcome-driven proof chips -->
+<div class="hero-outcome-strip" data-r data-d="1">
+  <span class="hoc"><span class="hoc-check">✓</span>100+ students cracked NATA</span>
+  <span class="hoc"><span class="hoc-check">✓</span>SPA · CEPT · NIT placements</span>
+  <span class="hoc"><span class="hoc-check">✓</span>April 2026 batch open</span>
+</div>
+
+<div class="hero-h1" role="heading" aria-level="2" data-r data-d="2">
+  Crack<br>
+  <span class="it tc">NATA.</span><br>
+  <span class="th">Get into</span><br>
+  architecture
+</div>
+
+<p class="hero-sub" data-r data-d="3">Chennai's most trusted NATA coaching institute. From drawing zero to 130+ scores — taught by practicing architects who know both the exam and the profession.</p>
+
+<!-- Outcome micro-stats -->
+<div class="hero-outcomes" data-r data-d="3">
+  <div class="ho-item"><span class="ho-n">148</span><span class="ho-l">Top NATA score</span></div>
+  <div class="ho-item"><span class="ho-n">100+</span><span class="ho-l">Students placed</span></div>
+  <div class="ho-item"><span class="ho-n">5+</span><span class="ho-l">Years of results</span></div>
+</div>
+
+<!-- Pricing hint -->
+<div class="hero-pricing-hint" data-r data-d="3">
+  <strong>Programs from ₹18,000</strong>
+  <span class="pricing-dot" aria-hidden="true"></span>
+  <span>EMI available &nbsp;·&nbsp; No hidden fees</span>
+</div>
+
+<!-- Social proof with real student representation -->
+<div class="hero-proof" data-r data-d="4">
+  <div class="hp-avatars" aria-hidden="true">
+    <!-- Silhouette-style initials representing real students -->
+    <div class="hp-avatar fallback" style="background:#e8ddd3;color:#a0785a;">P</div>
+    <div class="hp-avatar fallback" style="background:#dde3e8;color:#4a7c59;">A</div>
+    <div class="hp-avatar fallback" style="background:#e3dde8;color:#6a4a7c;">K</div>
+    <div class="hp-avatar fallback" style="background:#e8e3dd;color:#7c6b4a;">R</div>
+    <div class="hp-avatar fallback" style="background:#dde8e0;color:#4a7a5a;">M</div>
+  </div>
+  <div>
+    <div class="stars" aria-hidden="true">★★★★★</div>
+    <p class="hp-text">Trusted by <strong>100+ students</strong> — placed in SPA, CEPT, NIT, Crescent &amp; more</p>
+  </div>
+</div>
+
+<!-- Primary CTA: Assessment funnel -->
+<div class="hero-actions" data-r data-d="5">
+  <a href="#predictor" class="btn-fill primary-hero">Check My NATA Readiness →</a>
+  <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20crack%20NATA%202026.%20I%27d%20like%20to%20book%20a%20free%20consultation" target="_blank" class="btn-line" rel="noopener">Book Free Consultation</a>
+</div>
+<p class="cta-hint" data-r data-d="5">Takes 2 minutes · Free · No commitment required</p>
+
+<div class="hero-chips" data-r data-d="6">
+  <a href="#mocktest" class="chip active">Try NATA Mock Test →</a>
+  <a href="#nata" class="chip">View Programs &amp; Fees →</a>
+  <a href="#drawboard" class="chip">Open Drawing Board →</a>
+</div>
+```
+
   </div>
   <div class="hero-bar" data-r aria-label="Academy statistics">
     <div class="hb-item"><span class="hb-n">100+</span><span class="hb-l">Students placed</span></div>
@@ -961,7 +1028,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     <div class="hb-item"><span class="hb-n">100%</span><span class="hb-l">Personal mentorship</span></div>
   </div>
 </section>
+
 <!-- GALLERY -->
+
 <div class="rl"></div>
 <section class="gallery-sec" id="gallery" aria-label="Academy gallery">
   <div class="gallery-head" data-r>
@@ -997,7 +1066,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20see%20more%20student%20work%20from%20Ray%20Arch%20Academy" target="_blank" class="gallery-cta" rel="noopener">See more student work</a>
   </div>
 </section>
+
 <!-- SERVICES -->
+
 <div class="rl"></div>
 <section class="sec" id="services" aria-labelledby="svc-h">
   <div class="wrap">
@@ -1044,7 +1115,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- NATA SCORE PREDICTOR / LEAD FUNNEL -->
+
 <div class="rl"></div>
 <section class="predictor-sec" id="predictor" aria-labelledby="pred-h">
   <div class="wrap">
@@ -1062,77 +1135,83 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
       </div>
       <div class="pred-form" data-r data-d="2" id="predForm">
         <div class="pf-progress"><div class="pf-prog-fill" id="pfProg" style="width:20%"></div></div>
-        <!-- Step 1 -->
-        <div class="pf-step active" id="pfs1">
-          <span class="pf-step-label">Step 1 of 5</span>
-          <p class="pf-q">How far is your NATA 2026 exam?</p>
-          <div class="pf-opts">
-            <button class="pf-opt" onclick="pfNext(1,'6+ months',this)"><span class="pf-opt-l">A</span>6+ months away</button>
-            <button class="pf-opt" onclick="pfNext(1,'3-6 months',this)"><span class="pf-opt-l">B</span>3–6 months</button>
-            <button class="pf-opt" onclick="pfNext(1,'1-3 months',this)"><span class="pf-opt-l">C</span>1–3 months</button>
-            <button class="pf-opt" onclick="pfNext(1,'Under 1 month',this)"><span class="pf-opt-l">D</span>Less than 1 month</button>
-          </div>
-        </div>
-        <!-- Step 2 -->
-        <div class="pf-step" id="pfs2">
-          <span class="pf-step-label">Step 2 of 5</span>
-          <p class="pf-q">Where are you with preparation right now?</p>
-          <div class="pf-opts">
-            <button class="pf-opt" onclick="pfNext(2,'Starting fresh',this)"><span class="pf-opt-l">A</span>Complete beginner — starting fresh</button>
-            <button class="pf-opt" onclick="pfNext(2,'Self-studying',this)"><span class="pf-opt-l">B</span>Self-studying for a few weeks</button>
-            <button class="pf-opt" onclick="pfNext(2,'Some coaching',this)"><span class="pf-opt-l">C</span>Had some coaching before</button>
-            <button class="pf-opt" onclick="pfNext(2,'Advanced',this)"><span class="pf-opt-l">D</span>Preparing for 3+ months</button>
-          </div>
-        </div>
-        <!-- Step 3 -->
-        <div class="pf-step" id="pfs3">
-          <span class="pf-step-label">Step 3 of 5</span>
-          <p class="pf-q">What's your biggest weak area right now?</p>
-          <div class="pf-opts">
-            <button class="pf-opt" onclick="pfNext(3,'Drawing',this)"><span class="pf-opt-l">A</span>Drawing &amp; freehand sketching</button>
-            <button class="pf-opt" onclick="pfNext(3,'Mathematics',this)"><span class="pf-opt-l">B</span>Mathematics &amp; proportions</button>
-            <button class="pf-opt" onclick="pfNext(3,'Spatial',this)"><span class="pf-opt-l">C</span>Spatial reasoning &amp; 3D thinking</button>
-            <button class="pf-opt" onclick="pfNext(3,'All areas',this)"><span class="pf-opt-l">D</span>All areas need serious work</button>
-          </div>
-        </div>
-        <!-- Step 4 -->
-        <div class="pf-step" id="pfs4">
-          <span class="pf-step-label">Step 4 of 5</span>
-          <p class="pf-q">Which college are you targeting?</p>
-          <div class="pf-opts">
-            <button class="pf-opt" onclick="pfNext(4,'NIT/SPA/CEPT',this)"><span class="pf-opt-l">A</span>NIT / SPA / CEPT (top national)</button>
-            <button class="pf-opt" onclick="pfNext(4,'TN Government',this)"><span class="pf-opt-l">B</span>Government college in Tamil Nadu</button>
-            <button class="pf-opt" onclick="pfNext(4,'Private college',this)"><span class="pf-opt-l">C</span>Manipal / VIT / Crescent / SRM</button>
-            <button class="pf-opt" onclick="pfNext(4,'Undecided',this)"><span class="pf-opt-l">D</span>Still deciding — need guidance</button>
-          </div>
-        </div>
-        <!-- Step 5 -->
-        <div class="pf-step" id="pfs5">
-          <span class="pf-step-label">Step 5 of 5 — Almost there!</span>
-          <p class="pf-q">Get your result + free consultation offer</p>
-          <input class="pf-input" type="text" id="pfName" placeholder="Your name" autocomplete="name">
-          <input class="pf-input" type="tel" id="pfPhone" placeholder="WhatsApp number" autocomplete="tel">
-          <p class="pf-hint">No spam. We'll send your readiness score and a consultation offer — that's it.</p>
-          <button class="btn-pred" onclick="pfShowResult()">See My Readiness Score + Recommended Program →</button>
-        </div>
-        <!-- Result -->
-        <div class="pf-step" id="pfs_result">
-          <div class="pf-result">
-            <span class="pfr-score" id="pfrScore">68</span>
-            <p class="pfr-range" id="pfrRange">Estimated NATA Readiness — Intermediate</p>
-            <p class="pfr-msg" id="pfrMsg">You have a solid foundation — the right coaching will take you to 130+</p>
-            <div class="pfr-program" id="pfrProg"><strong>Recommended Program:</strong> NATA Intensive (3-month)</div>
-            <a href="#" id="pfrWaBtn" class="btn-wa-pred" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Claim Free Consultation on WhatsApp
-            </a>
-          </div>
-        </div>
+
+```
+    <!-- Step 1 -->
+    <div class="pf-step active" id="pfs1">
+      <span class="pf-step-label">Step 1 of 5</span>
+      <p class="pf-q">How far is your NATA 2026 exam?</p>
+      <div class="pf-opts">
+        <button class="pf-opt" onclick="pfNext(1,'6+ months',this)"><span class="pf-opt-l">A</span>6+ months away</button>
+        <button class="pf-opt" onclick="pfNext(1,'3-6 months',this)"><span class="pf-opt-l">B</span>3–6 months</button>
+        <button class="pf-opt" onclick="pfNext(1,'1-3 months',this)"><span class="pf-opt-l">C</span>1–3 months</button>
+        <button class="pf-opt" onclick="pfNext(1,'Under 1 month',this)"><span class="pf-opt-l">D</span>Less than 1 month</button>
+      </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="pf-step" id="pfs2">
+      <span class="pf-step-label">Step 2 of 5</span>
+      <p class="pf-q">Where are you with preparation right now?</p>
+      <div class="pf-opts">
+        <button class="pf-opt" onclick="pfNext(2,'Starting fresh',this)"><span class="pf-opt-l">A</span>Complete beginner — starting fresh</button>
+        <button class="pf-opt" onclick="pfNext(2,'Self-studying',this)"><span class="pf-opt-l">B</span>Self-studying for a few weeks</button>
+        <button class="pf-opt" onclick="pfNext(2,'Some coaching',this)"><span class="pf-opt-l">C</span>Had some coaching before</button>
+        <button class="pf-opt" onclick="pfNext(2,'Advanced',this)"><span class="pf-opt-l">D</span>Preparing for 3+ months</button>
+      </div>
+    </div>
+    <!-- Step 3 -->
+    <div class="pf-step" id="pfs3">
+      <span class="pf-step-label">Step 3 of 5</span>
+      <p class="pf-q">What's your biggest weak area right now?</p>
+      <div class="pf-opts">
+        <button class="pf-opt" onclick="pfNext(3,'Drawing',this)"><span class="pf-opt-l">A</span>Drawing &amp; freehand sketching</button>
+        <button class="pf-opt" onclick="pfNext(3,'Mathematics',this)"><span class="pf-opt-l">B</span>Mathematics &amp; proportions</button>
+        <button class="pf-opt" onclick="pfNext(3,'Spatial',this)"><span class="pf-opt-l">C</span>Spatial reasoning &amp; 3D thinking</button>
+        <button class="pf-opt" onclick="pfNext(3,'All areas',this)"><span class="pf-opt-l">D</span>All areas need serious work</button>
+      </div>
+    </div>
+    <!-- Step 4 -->
+    <div class="pf-step" id="pfs4">
+      <span class="pf-step-label">Step 4 of 5</span>
+      <p class="pf-q">Which college are you targeting?</p>
+      <div class="pf-opts">
+        <button class="pf-opt" onclick="pfNext(4,'NIT/SPA/CEPT',this)"><span class="pf-opt-l">A</span>NIT / SPA / CEPT (top national)</button>
+        <button class="pf-opt" onclick="pfNext(4,'TN Government',this)"><span class="pf-opt-l">B</span>Government college in Tamil Nadu</button>
+        <button class="pf-opt" onclick="pfNext(4,'Private college',this)"><span class="pf-opt-l">C</span>Manipal / VIT / Crescent / SRM</button>
+        <button class="pf-opt" onclick="pfNext(4,'Undecided',this)"><span class="pf-opt-l">D</span>Still deciding — need guidance</button>
+      </div>
+    </div>
+    <!-- Step 5 -->
+    <div class="pf-step" id="pfs5">
+      <span class="pf-step-label">Step 5 of 5 — Almost there!</span>
+      <p class="pf-q">Get your result + free consultation offer</p>
+      <input class="pf-input" type="text" id="pfName" placeholder="Your name" autocomplete="name">
+      <input class="pf-input" type="tel" id="pfPhone" placeholder="WhatsApp number" autocomplete="tel">
+      <p class="pf-hint">No spam. We'll send your readiness score and a consultation offer — that's it.</p>
+      <button class="btn-pred" onclick="pfShowResult()">See My Readiness Score + Recommended Program →</button>
+    </div>
+    <!-- Result -->
+    <div class="pf-step" id="pfs_result">
+      <div class="pf-result">
+        <span class="pfr-score" id="pfrScore">68</span>
+        <p class="pfr-range" id="pfrRange">Estimated NATA Readiness — Intermediate</p>
+        <p class="pfr-msg" id="pfrMsg">You have a solid foundation — the right coaching will take you to 130+</p>
+        <div class="pfr-program" id="pfrProg"><strong>Recommended Program:</strong> NATA Intensive (3-month)</div>
+        <a href="#" id="pfrWaBtn" class="btn-wa-pred" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Claim Free Consultation on WhatsApp
+        </a>
       </div>
     </div>
   </div>
+</div>
+```
+
+  </div>
 </section>
+
 <!-- RESULTS & PLACEMENTS -->
+
 <div class="rl"></div>
 <section class="sec results-sec" id="results" aria-labelledby="res-head-h">
   <div class="wrap">
@@ -1140,74 +1219,81 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
       <span class="label" data-r>Where Our Students Go</span>
       <h2 class="display" id="res-head-h" data-r data-d="1">100+ students.<br><em>Top colleges.</em></h2>
     </div>
-    <!-- College ticker (with Crescent added) -->
-    <div class="results-ticker" aria-label="College placements ticker">
-      <div class="ticker-track" id="ticker">
-        <div class="tk-item"><span class="tk-college">SPA Delhi</span><span class="tk-count">3 students</span></div>
-        <div class="tk-item"><span class="tk-college">CEPT Ahmedabad</span><span class="tk-count">2 students</span></div>
-        <div class="tk-item"><span class="tk-college">Manipal School of Architecture</span><span class="tk-count">8 students</span></div>
-        <div class="tk-item"><span class="tk-college">VIT Vellore</span><span class="tk-count">6 students</span></div>
-        <div class="tk-item"><span class="tk-college">MEASI Academy</span><span class="tk-count">12 students</span></div>
-        <div class="tk-item"><span class="tk-college">Crescent School of Architecture</span><span class="tk-count">5 students</span></div>
-        <div class="tk-item"><span class="tk-college">SRM Institute</span><span class="tk-count">9 students</span></div>
-        <div class="tk-item"><span class="tk-college">Saveetha School</span><span class="tk-count">7 students</span></div>
-        <div class="tk-item"><span class="tk-college">Hindustan University</span><span class="tk-count">5 students</span></div>
-        <div class="tk-item"><span class="tk-college">NIT Trichy</span><span class="tk-count">2 students</span></div>
-        <!-- Duplicate for seamless loop -->
-        <div class="tk-item"><span class="tk-college">SPA Delhi</span><span class="tk-count">3 students</span></div>
-        <div class="tk-item"><span class="tk-college">CEPT Ahmedabad</span><span class="tk-count">2 students</span></div>
-        <div class="tk-item"><span class="tk-college">Manipal School of Architecture</span><span class="tk-count">8 students</span></div>
-        <div class="tk-item"><span class="tk-college">VIT Vellore</span><span class="tk-count">6 students</span></div>
-        <div class="tk-item"><span class="tk-college">MEASI Academy</span><span class="tk-count">12 students</span></div>
-        <div class="tk-item"><span class="tk-college">Crescent School of Architecture</span><span class="tk-count">5 students</span></div>
-        <div class="tk-item"><span class="tk-college">SRM Institute</span><span class="tk-count">9 students</span></div>
-        <div class="tk-item"><span class="tk-college">Saveetha School</span><span class="tk-count">7 students</span></div>
-        <div class="tk-item"><span class="tk-college">Hindustan University</span><span class="tk-count">5 students</span></div>
-        <div class="tk-item"><span class="tk-college">NIT Trichy</span><span class="tk-count">2 students</span></div>
-      </div>
-    </div>
-    <!-- Featured placements -->
-    <div class="placements-grid" data-r data-d="2">
-      <div class="plc">
-        <span class="plc-year">NATA 2025</span>
-        <div class="plc-name">Priya A.</div>
-        <div class="plc-college">SPA New Delhi</div>
-        <div class="plc-score">148 <span>/ 200 NATA Score</span></div>
-      </div>
-      <div class="plc">
-        <span class="plc-year">NATA 2025</span>
-        <div class="plc-name">Karthik R.</div>
-        <div class="plc-college">CEPT Ahmedabad</div>
-        <div class="plc-score">141 <span>/ 200 NATA Score</span></div>
-      </div>
-      <div class="plc">
-        <span class="plc-year">NATA 2024</span>
-        <div class="plc-name">Ananya S.</div>
-        <div class="plc-college">Manipal School of Architecture</div>
-        <div class="plc-score">136 <span>/ 200 NATA Score</span></div>
-      </div>
-      <div class="plc">
-        <span class="plc-year">NATA 2025</span>
-        <div class="plc-name">Rajan M.</div>
-        <div class="plc-college">NIT Trichy</div>
-        <div class="plc-score">139 <span>/ 200 NATA Score</span></div>
-      </div>
-      <div class="plc">
-        <span class="plc-year">NATA 2024</span>
-        <div class="plc-name">Deepika V.</div>
-        <div class="plc-college">Crescent School of Architecture</div>
-        <div class="plc-score">128 <span>/ 200 NATA Score</span></div>
-      </div>
-      <div class="plc">
-        <span class="plc-year">NATA 2025</span>
-        <div class="plc-name">Arun K.</div>
-        <div class="plc-college">SRM Institute of Architecture</div>
-        <div class="plc-score">132 <span>/ 200 NATA Score</span></div>
-      </div>
-    </div>
+
+```
+<!-- College ticker (with Crescent added) -->
+<div class="results-ticker" aria-label="College placements ticker">
+  <div class="ticker-track" id="ticker">
+    <div class="tk-item"><span class="tk-college">SPA Delhi</span><span class="tk-count">3 students</span></div>
+    <div class="tk-item"><span class="tk-college">CEPT Ahmedabad</span><span class="tk-count">2 students</span></div>
+    <div class="tk-item"><span class="tk-college">Manipal School of Architecture</span><span class="tk-count">8 students</span></div>
+    <div class="tk-item"><span class="tk-college">VIT Vellore</span><span class="tk-count">6 students</span></div>
+    <div class="tk-item"><span class="tk-college">MEASI Academy</span><span class="tk-count">12 students</span></div>
+    <div class="tk-item"><span class="tk-college">Crescent School of Architecture</span><span class="tk-count">5 students</span></div>
+    <div class="tk-item"><span class="tk-college">SRM Institute</span><span class="tk-count">9 students</span></div>
+    <div class="tk-item"><span class="tk-college">Saveetha School</span><span class="tk-count">7 students</span></div>
+    <div class="tk-item"><span class="tk-college">Hindustan University</span><span class="tk-count">5 students</span></div>
+    <div class="tk-item"><span class="tk-college">NIT Trichy</span><span class="tk-count">2 students</span></div>
+    <!-- Duplicate for seamless loop -->
+    <div class="tk-item"><span class="tk-college">SPA Delhi</span><span class="tk-count">3 students</span></div>
+    <div class="tk-item"><span class="tk-college">CEPT Ahmedabad</span><span class="tk-count">2 students</span></div>
+    <div class="tk-item"><span class="tk-college">Manipal School of Architecture</span><span class="tk-count">8 students</span></div>
+    <div class="tk-item"><span class="tk-college">VIT Vellore</span><span class="tk-count">6 students</span></div>
+    <div class="tk-item"><span class="tk-college">MEASI Academy</span><span class="tk-count">12 students</span></div>
+    <div class="tk-item"><span class="tk-college">Crescent School of Architecture</span><span class="tk-count">5 students</span></div>
+    <div class="tk-item"><span class="tk-college">SRM Institute</span><span class="tk-count">9 students</span></div>
+    <div class="tk-item"><span class="tk-college">Saveetha School</span><span class="tk-count">7 students</span></div>
+    <div class="tk-item"><span class="tk-college">Hindustan University</span><span class="tk-count">5 students</span></div>
+    <div class="tk-item"><span class="tk-college">NIT Trichy</span><span class="tk-count">2 students</span></div>
+  </div>
+</div>
+
+<!-- Featured placements -->
+<div class="placements-grid" data-r data-d="2">
+  <div class="plc">
+    <span class="plc-year">NATA 2025</span>
+    <div class="plc-name">Priya A.</div>
+    <div class="plc-college">SPA New Delhi</div>
+    <div class="plc-score">148 <span>/ 200 NATA Score</span></div>
+  </div>
+  <div class="plc">
+    <span class="plc-year">NATA 2025</span>
+    <div class="plc-name">Karthik R.</div>
+    <div class="plc-college">CEPT Ahmedabad</div>
+    <div class="plc-score">141 <span>/ 200 NATA Score</span></div>
+  </div>
+  <div class="plc">
+    <span class="plc-year">NATA 2024</span>
+    <div class="plc-name">Ananya S.</div>
+    <div class="plc-college">Manipal School of Architecture</div>
+    <div class="plc-score">136 <span>/ 200 NATA Score</span></div>
+  </div>
+  <div class="plc">
+    <span class="plc-year">NATA 2025</span>
+    <div class="plc-name">Rajan M.</div>
+    <div class="plc-college">NIT Trichy</div>
+    <div class="plc-score">139 <span>/ 200 NATA Score</span></div>
+  </div>
+  <div class="plc">
+    <span class="plc-year">NATA 2024</span>
+    <div class="plc-name">Deepika V.</div>
+    <div class="plc-college">Crescent School of Architecture</div>
+    <div class="plc-score">128 <span>/ 200 NATA Score</span></div>
+  </div>
+  <div class="plc">
+    <span class="plc-year">NATA 2025</span>
+    <div class="plc-name">Arun K.</div>
+    <div class="plc-college">SRM Institute of Architecture</div>
+    <div class="plc-score">132 <span>/ 200 NATA Score</span></div>
+  </div>
+</div>
+```
+
   </div>
 </section>
+
 <!-- TESTIMONIALS -->
+
 <div class="rl"></div>
 <section class="sec testi-sec" id="testimonials" aria-labelledby="test-h2">
   <div class="wrap">
@@ -1288,7 +1374,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- ══ FOR PARENTS ══ -->
+
 <div class="rl"></div>
 <section class="parents-sec" id="parents" aria-labelledby="parents-h">
   <div class="wrap">
@@ -1330,7 +1418,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- FOUNDERS -->
+
 <div class="rl"></div>
 <section class="sec about-bg" id="team" aria-labelledby="team-h">
   <div class="wrap">
@@ -1379,7 +1469,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- NATA -->
+
 <div class="rl"></div>
 <section class="sec" id="nata" aria-labelledby="nata-h">
   <div class="wrap">
@@ -1462,7 +1554,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- SOFTWARE -->
+
 <div class="rl"></div>
 <section class="sec sw-bg" id="software" aria-labelledby="sw-h">
   <div class="wrap">
@@ -1485,7 +1579,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- MOCK TEST -->
+
 <div class="rl"></div>
 <section class="sec test-sec" id="mocktest" aria-labelledby="test-h">
   <div class="wrap">
@@ -1503,79 +1599,88 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
         </div>
       </div>
     </div>
-    <div class="test-shell" data-r data-d="2">
-      <div class="test-topbar">
-        <span class="test-title-sm">NATA Sample Test — Ray Arch Academy</span>
-        <span class="test-diff-badge" id="diffBadge">Easy</span>
-        <span class="test-timer" id="timerDisplay" aria-live="polite">15:00</span>
-      </div>
-      <div class="test-pb"><div class="test-pf" id="progressFill"></div></div>
-      <div class="test-screen active" id="scIntro">
-        <span class="label">Assessment Overview</span>
-        <div class="test-intro-grid">
-          <div class="tsbox"><span class="tsn">10</span><span class="tsl">Questions</span></div>
-          <div class="tsbox"><span class="tsn">15</span><span class="tsl">Minutes</span></div>
-          <div class="tsbox"><span class="tsn" id="diffLabel">Easy</span><span class="tsl">Difficulty</span></div>
-        </div>
-        <p style="font-size:.97rem;font-weight:300;line-height:1.85;color:var(--ink-60);margin-bottom:30px;max-width:520px;">
-          This mini-test covers Drawing Aptitude, Spatial Reasoning, and Mathematics — the three core areas of the NATA examination. After completion you'll receive a personalised score analysis and a free consultation offer.
-        </p>
-        <button class="btn-test primary" onclick="startTest()">Begin Test →</button>
-      </div>
-      <div class="test-screen" id="scQ">
-        <div class="q-meta">
-          <span class="q-num" id="qNum">Question 1 of 10</span>
-          <span class="q-cat" id="qCat">Drawing Aptitude</span>
-        </div>
-        <p class="q-text" id="qText"></p>
-        <div class="options" id="optContainer" role="list"></div>
-        <div class="q-nav">
-          <div class="q-dots" id="qDots" role="tablist"></div>
-          <div style="display:flex;gap:10px;">
-            <button class="btn-test secondary" id="btnPrev" onclick="prevQ()" disabled>← Prev</button>
-            <button class="btn-test primary" id="btnNext" onclick="nextQ()">Next →</button>
-          </div>
-        </div>
-      </div>
-      <div class="test-screen" id="scResult">
-        <span class="label">Your Result</span>
-        <div class="res-ring-wrap" aria-hidden="true">
-          <div class="res-ring">
-            <svg width="150" height="150" viewBox="0 0 150 150">
-              <circle class="rtrack" cx="75" cy="75" r="60"/>
-              <circle class="rfill" id="ringFill" cx="75" cy="75" r="60"/>
-            </svg>
-            <div class="res-pct" id="resultPct">0<span>%</span></div>
-          </div>
-        </div>
-        <p class="res-msg" id="resultMsg">Well done!</p>
-        <p class="res-sub" id="resultSub"></p>
-        <div class="res-bd">
-          <div class="rbi"><span class="rbn" id="rbCorrect">0</span><span class="rbl">Correct</span></div>
-          <div class="rbi"><span class="rbn" id="rbWrong">0</span><span class="rbl">Incorrect</span></div>
-          <div class="rbi"><span class="rbn" id="rbTime">0s</span><span class="rbl">Time Used</span></div>
-        </div>
-        <div class="res-funnel" id="resFunnel">
-          <p class="rf-title" id="rfTitle">Ready to turn this into a NATA rank?</p>
-          <p class="rf-sub" id="rfSub">Our coaches will personally analyse your weak areas and build you a custom study plan. First consultation is completely free.</p>
-          <a href="#" id="resWaBtn" class="res-wa-btn" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Get Free Analysis on WhatsApp
-          </a>
-        </div>
-        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;">
-          <button class="btn-test primary" onclick="retryTest()">Retake Test</button>
-          <a href="https://wa.me/919176463826?text=I%20just%20took%20the%20NATA%20mock%20test%20and%20want%20to%20crack%20NATA%202026.%20I%27d%20like%20to%20enroll%20in%20the%20April%20batch" target="_blank" class="btn-test secondary" style="text-decoration:none;display:inline-flex;align-items:center;">Enroll for April Batch ↗</a>
-        </div>
-        <div class="exp-block">
-          <p class="exp-title">Explanations</p>
-          <div id="expContainer"></div>
-        </div>
+
+```
+<div class="test-shell" data-r data-d="2">
+  <div class="test-topbar">
+    <span class="test-title-sm">NATA Sample Test — Ray Arch Academy</span>
+    <span class="test-diff-badge" id="diffBadge">Easy</span>
+    <span class="test-timer" id="timerDisplay" aria-live="polite">15:00</span>
+  </div>
+  <div class="test-pb"><div class="test-pf" id="progressFill"></div></div>
+
+  <div class="test-screen active" id="scIntro">
+    <span class="label">Assessment Overview</span>
+    <div class="test-intro-grid">
+      <div class="tsbox"><span class="tsn">10</span><span class="tsl">Questions</span></div>
+      <div class="tsbox"><span class="tsn">15</span><span class="tsl">Minutes</span></div>
+      <div class="tsbox"><span class="tsn" id="diffLabel">Easy</span><span class="tsl">Difficulty</span></div>
+    </div>
+    <p style="font-size:.97rem;font-weight:300;line-height:1.85;color:var(--ink-60);margin-bottom:30px;max-width:520px;">
+      This mini-test covers Drawing Aptitude, Spatial Reasoning, and Mathematics — the three core areas of the NATA examination. After completion you'll receive a personalised score analysis and a free consultation offer.
+    </p>
+    <button class="btn-test primary" onclick="startTest()">Begin Test →</button>
+  </div>
+
+  <div class="test-screen" id="scQ">
+    <div class="q-meta">
+      <span class="q-num" id="qNum">Question 1 of 10</span>
+      <span class="q-cat" id="qCat">Drawing Aptitude</span>
+    </div>
+    <p class="q-text" id="qText"></p>
+    <div class="options" id="optContainer" role="list"></div>
+    <div class="q-nav">
+      <div class="q-dots" id="qDots" role="tablist"></div>
+      <div style="display:flex;gap:10px;">
+        <button class="btn-test secondary" id="btnPrev" onclick="prevQ()" disabled>← Prev</button>
+        <button class="btn-test primary" id="btnNext" onclick="nextQ()">Next →</button>
       </div>
     </div>
   </div>
+
+  <div class="test-screen" id="scResult">
+    <span class="label">Your Result</span>
+    <div class="res-ring-wrap" aria-hidden="true">
+      <div class="res-ring">
+        <svg width="150" height="150" viewBox="0 0 150 150">
+          <circle class="rtrack" cx="75" cy="75" r="60"/>
+          <circle class="rfill" id="ringFill" cx="75" cy="75" r="60"/>
+        </svg>
+        <div class="res-pct" id="resultPct">0<span>%</span></div>
+      </div>
+    </div>
+    <p class="res-msg" id="resultMsg">Well done!</p>
+    <p class="res-sub" id="resultSub"></p>
+    <div class="res-bd">
+      <div class="rbi"><span class="rbn" id="rbCorrect">0</span><span class="rbl">Correct</span></div>
+      <div class="rbi"><span class="rbn" id="rbWrong">0</span><span class="rbl">Incorrect</span></div>
+      <div class="rbi"><span class="rbn" id="rbTime">0s</span><span class="rbl">Time Used</span></div>
+    </div>
+    <div class="res-funnel" id="resFunnel">
+      <p class="rf-title" id="rfTitle">Ready to turn this into a NATA rank?</p>
+      <p class="rf-sub" id="rfSub">Our coaches will personally analyse your weak areas and build you a custom study plan. First consultation is completely free.</p>
+      <a href="#" id="resWaBtn" class="res-wa-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Get Free Analysis on WhatsApp
+      </a>
+    </div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;">
+      <button class="btn-test primary" onclick="retryTest()">Retake Test</button>
+      <a href="https://wa.me/919176463826?text=I%20just%20took%20the%20NATA%20mock%20test%20and%20want%20to%20crack%20NATA%202026.%20I%27d%20like%20to%20enroll%20in%20the%20April%20batch" target="_blank" class="btn-test secondary" style="text-decoration:none;display:inline-flex;align-items:center;">Enroll for April Batch ↗</a>
+    </div>
+    <div class="exp-block">
+      <p class="exp-title">Explanations</p>
+      <div id="expContainer"></div>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
 </section>
+
 <!-- DRAWING BOARD -->
+
 <div class="rl"></div>
 <section class="sec draw-sec" id="drawboard" aria-labelledby="draw-h">
   <div class="wrap">
@@ -1584,72 +1689,137 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
         <span class="label">Practice Studio</span>
         <h2 class="display" id="draw-h">Drawing<br><em>Board</em></h2>
       </div>
-      <p class="body-copy" data-r data-d="1">A live architectural drawing studio with perspective grid overlays — 1-point, 2-point, and isometric. Works with mouse, touchscreen, and stylus. Practice exactly like the NATA drawing section.</p>
+      <p class="body-copy" data-r data-d="1">A full architectural drawing studio with snap-to-grid, scale ruler, straight line tool, shape tools, shift-constrain, and example perspective templates to trace. Exactly how NATA drawing is practised in class.</p>
     </div>
-    <div class="draw-shell" data-r data-d="2">
-      <div class="draw-tb">
-        <div class="tbg">
-          <button class="tbb active" id="toolPencil" onclick="setTool('pencil')" title="Pencil" aria-pressed="true">✏️</button>
-          <button class="tbb" id="toolPen" onclick="setTool('pen')" title="Ink Pen" aria-pressed="false">🖊️</button>
-          <button class="tbb" id="toolCharcoal" onclick="setTool('charcoal')" title="Charcoal" aria-pressed="false">🪨</button>
-          <button class="tbb" id="toolMarker" onclick="setTool('marker')" title="Marker" aria-pressed="false">🖌️</button>
-          <button class="tbb" id="toolEraser" onclick="setTool('eraser')" title="Eraser" aria-pressed="false">⬜</button>
-        </div>
-        <div class="tbg">
-          <div class="sw-wrap">
-            <span class="sw-lbl">Size</span>
-            <input type="range" id="brushSize" min="1" max="40" value="3" oninput="updateSize(this.value)" aria-label="Brush size">
-            <span class="sw-lbl" id="sizeVal">3</span>
-          </div>
-        </div>
-        <div class="tbg">
-          <div class="sw-wrap">
-            <span class="sw-lbl">Opacity</span>
-            <input type="range" id="brushOpacity" min="10" max="100" value="90" oninput="updateOpacity(this.value)" aria-label="Brush opacity">
-          </div>
-        </div>
-        <div class="tbg">
-          <div class="sw-row">
-            <div class="sw-dot active" style="background:#1c1714" onclick="setColor('#1c1714',this)" role="button" aria-label="Black"></div>
-            <div class="sw-dot" style="background:#c1440e" onclick="setColor('#c1440e',this)" role="button" aria-label="Terracotta"></div>
-            <div class="sw-dot" style="background:#4a7c59" onclick="setColor('#4a7c59',this)" role="button" aria-label="Green"></div>
-            <div class="sw-dot" style="background:#2c4a7c" onclick="setColor('#2c4a7c',this)" role="button" aria-label="Blue"></div>
-            <div class="sw-dot" style="background:#7c6b4a" onclick="setColor('#7c6b4a',this)" role="button" aria-label="Brown"></div>
-            <div class="sw-dot" style="background:#888" onclick="setColor('#888',this)" role="button" aria-label="Grey"></div>
-            <div class="sw-dot" style="background:#f9f4ee;border:1px solid #ccc;" onclick="setColor('#f9f4ee',this)" role="button" aria-label="White"></div>
-            <input type="color" id="colPick" value="#1c1714" onchange="setColor(this.value,null)" aria-label="Custom color" title="Custom Color">
-          </div>
-        </div>
-        <div class="tbg" style="margin-left:auto;">
-          <button class="tbb" onclick="undoDraw()" title="Undo" aria-label="Undo">↩</button>
-          <button class="tbb" onclick="clearCanvas()" title="Clear" aria-label="Clear canvas">🗑</button>
-          <button class="tbb" onclick="saveDrawing()" title="Save PNG" aria-label="Save as PNG">💾</button>
-        </div>
-      </div>
-      <div class="persp-bar" role="group" aria-label="Perspective grid options">
-        <span class="pl">Perspective Grid:</span>
-        <button class="pb active" onclick="setPG('none',this)" aria-pressed="true">None</button>
-        <button class="pb" onclick="setPG('1pp',this)" aria-pressed="false">1-Point</button>
-        <button class="pb" onclick="setPG('2pp',this)" aria-pressed="false">2-Point</button>
-        <button class="pb" onclick="setPG('iso',this)" aria-pressed="false">Isometric</button>
-        <button class="pb" onclick="setPG('grid',this)" aria-pressed="false">Flat Grid</button>
-        <div class="psep" aria-hidden="true"></div>
-        <span class="pl">Grid Opacity:</span>
-        <input type="range" id="gOp" min="5" max="60" value="22" style="width:72px;"
-               oninput="updateGO(this.value)" aria-label="Grid opacity">
-      </div>
-      <div class="dcw">
-        <canvas id="drawCanvas" role="img" aria-label="Drawing canvas"></canvas>
-        <canvas id="perspCanvas" aria-hidden="true"></canvas>
-      </div>
-      <div class="dst">
-        <span class="dst-l" id="toolStatus">Tool: Pencil · Select a perspective grid above</span>
-        <span class="dst-r" id="drawCoords" aria-live="off">x: — · y: —</span>
-      </div>
+
+```
+<!-- Example Templates Row -->
+<div class="tmpl-row" data-r>
+  <span class="pl" style="color:var(--ink-40);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;margin-right:8px;">Load Example:</span>
+  <button class="pb" onclick="loadTemplate('room1pp')" title="Room — 1-Point Perspective">🏠 Room (1-Point)</button>
+  <button class="pb" onclick="loadTemplate('building2pp')" title="Building — 2-Point Perspective">🏢 Building (2-Point)</button>
+  <button class="pb" onclick="loadTemplate('isobox')" title="Isometric Box">📦 Iso Box</button>
+  <button class="pb" onclick="loadTemplate('staircase')" title="Staircase in 2-Point">🪜 Staircase</button>
+  <button class="pb" onclick="loadTemplate('arch')" title="Archway / Arch Form">🏛️ Archway</button>
+  <div class="psep" aria-hidden="true"></div>
+  <button class="pb" id="guidedBtn" onclick="toggleGuided()" title="Step-by-step guided drawing mode">🎓 Guided Mode</button>
+</div>
+
+<!-- Guided Mode Panel -->
+<div id="guidedPanel" style="display:none;background:var(--ink);border:1px solid rgba(249,244,238,.1);padding:18px 24px;margin-bottom:0;border-bottom:none;">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+    <div>
+      <span style="font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--terra);display:block;margin-bottom:6px;">Guided Practice</span>
+      <p id="guidedStepText" style="font-family:var(--f-d);font-size:1.05rem;font-weight:400;color:#f9f4ee;max-width:600px;line-height:1.45;">Select a template above to begin guided practice.</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-shrink:0;">
+      <button class="pb" id="guidedPrev" onclick="guidedStep(-1)" disabled style="opacity:.4;">← Prev</button>
+      <button class="pb" id="guidedNext" onclick="guidedStep(1)" disabled style="background:var(--terra);border-color:var(--terra);color:#fff;">Next Step →</button>
+      <span id="guidedCounter" style="font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(249,244,238,.3);align-self:center;"></span>
     </div>
   </div>
+</div>
+
+<div class="draw-shell" data-r data-d="2">
+  <!-- Row 1: Drawing tools -->
+  <div class="draw-tb">
+    <div class="tbg">
+      <button class="tbb active" id="toolPencil" onclick="setTool('pencil')" title="Pencil" aria-pressed="true">✏️</button>
+      <button class="tbb" id="toolPen" onclick="setTool('pen')" title="Ink Pen" aria-pressed="false">🖊️</button>
+      <button class="tbb" id="toolCharcoal" onclick="setTool('charcoal')" title="Charcoal" aria-pressed="false">🪨</button>
+      <button class="tbb" id="toolMarker" onclick="setTool('marker')" title="Marker" aria-pressed="false">🖌️</button>
+      <button class="tbb" id="toolLine" onclick="setTool('line')" title="Straight Line (L)" aria-pressed="false">📏</button>
+      <button class="tbb" id="toolRect" onclick="setTool('rect')" title="Rectangle" aria-pressed="false">▭</button>
+      <button class="tbb" id="toolCircle" onclick="setTool('circle')" title="Circle / Ellipse" aria-pressed="false">○</button>
+      <button class="tbb" id="toolEraser" onclick="setTool('eraser')" title="Eraser" aria-pressed="false">⬜</button>
+    </div>
+    <div class="tbg">
+      <div class="sw-wrap">
+        <span class="sw-lbl">Size</span>
+        <input type="range" id="brushSize" min="1" max="40" value="3" oninput="updateSize(this.value)" aria-label="Brush size">
+        <span class="sw-lbl" id="sizeVal">3</span>
+      </div>
+    </div>
+    <div class="tbg">
+      <div class="sw-wrap">
+        <span class="sw-lbl">Opacity</span>
+        <input type="range" id="brushOpacity" min="10" max="100" value="90" oninput="updateOpacity(this.value)" aria-label="Brush opacity">
+      </div>
+    </div>
+    <div class="tbg">
+      <div class="sw-row">
+        <div class="sw-dot active" style="background:#1c1714" onclick="setColor('#1c1714',this)" role="button" aria-label="Black"></div>
+        <div class="sw-dot" style="background:#c1440e" onclick="setColor('#c1440e',this)" role="button" aria-label="Terracotta"></div>
+        <div class="sw-dot" style="background:#4a7c59" onclick="setColor('#4a7c59',this)" role="button" aria-label="Green"></div>
+        <div class="sw-dot" style="background:#2c4a7c" onclick="setColor('#2c4a7c',this)" role="button" aria-label="Blue"></div>
+        <div class="sw-dot" style="background:#7c6b4a" onclick="setColor('#7c6b4a',this)" role="button" aria-label="Brown"></div>
+        <div class="sw-dot" style="background:#888" onclick="setColor('#888',this)" role="button" aria-label="Grey"></div>
+        <div class="sw-dot" style="background:#f9f4ee;border:1px solid #ccc;" onclick="setColor('#f9f4ee',this)" role="button" aria-label="White"></div>
+        <input type="color" id="colPick" value="#1c1714" onchange="setColor(this.value,null)" aria-label="Custom color" title="Custom Color">
+      </div>
+    </div>
+    <div class="tbg" style="margin-left:auto;">
+      <button class="tbb" onclick="undoDraw()" title="Undo (Ctrl+Z)" aria-label="Undo">↩</button>
+      <button class="tbb" onclick="redoDraw()" title="Redo" aria-label="Redo">↪</button>
+      <button class="tbb" onclick="clearCanvas()" title="Clear" aria-label="Clear canvas">🗑</button>
+      <button class="tbb" onclick="saveDrawing()" title="Save PNG" aria-label="Save as PNG">💾</button>
+    </div>
+  </div>
+
+  <!-- Row 2: Grid + Scale + Snap -->
+  <div class="persp-bar" role="group" aria-label="Perspective grid options">
+    <span class="pl">Grid:</span>
+    <button class="pb active" onclick="setPG('none',this)" aria-pressed="true">None</button>
+    <button class="pb" onclick="setPG('1pp',this)" aria-pressed="false">1-Point</button>
+    <button class="pb" onclick="setPG('2pp',this)" aria-pressed="false">2-Point</button>
+    <button class="pb" onclick="setPG('iso',this)" aria-pressed="false">Isometric</button>
+    <button class="pb" onclick="setPG('grid',this)" aria-pressed="false">Flat Grid</button>
+    <div class="psep" aria-hidden="true"></div>
+    <span class="pl">Opacity:</span>
+    <input type="range" id="gOp" min="5" max="60" value="22" style="width:64px;" oninput="updateGO(this.value)" aria-label="Grid opacity">
+    <div class="psep" aria-hidden="true"></div>
+    <span class="pl">Scale:</span>
+    <select id="scaleSelect" onchange="updateScale(this.value)" style="background:transparent;border:1px solid var(--rule);color:var(--ink-60);font-size:.65rem;letter-spacing:.12em;padding:5px 8px;cursor:pointer;font-family:var(--f-b);">
+      <option value="0">Off</option>
+      <option value="50">1:50</option>
+      <option value="100" selected>1:100</option>
+      <option value="200">1:200</option>
+      <option value="500">1:500</option>
+    </select>
+    <div class="psep" aria-hidden="true"></div>
+    <button class="pb" id="snapBtn" onclick="toggleSnap()" aria-pressed="false" title="Snap to grid">⊞ Snap</button>
+    <button class="pb" id="shiftBtn" style="opacity:.5;" title="Hold SHIFT for constrained lines (0°/45°/90°)">⇧ Shift-lock</button>
+    <button class="pb" id="rulerBtn" onclick="toggleRuler()" aria-pressed="false" title="Show ruler overlay">📐 Ruler</button>
+  </div>
+
+  <!-- Canvas area -->
+  <div class="dcw" style="position:relative;">
+    <!-- Ruler overlays -->
+    <canvas id="rulerH" style="position:absolute;top:0;left:28px;right:0;height:22px;width:calc(100% - 28px);z-index:4;pointer-events:none;display:none;"></canvas>
+    <canvas id="rulerV" style="position:absolute;top:22px;left:0;width:28px;bottom:0;height:calc(100% - 22px);z-index:4;pointer-events:none;display:none;"></canvas>
+    <canvas id="drawCanvas" role="img" aria-label="Drawing canvas" style="display:block;"></canvas>
+    <canvas id="perspCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;display:block;" aria-hidden="true"></canvas>
+    <!-- Preview canvas for line/rect/circle while dragging -->
+    <canvas id="previewCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;display:block;" aria-hidden="true"></canvas>
+    <!-- Crosshair coordinate tooltip -->
+    <div id="crosshairTip" style="position:absolute;background:rgba(28,23,20,.85);color:#f9f4ee;font-size:.6rem;letter-spacing:.1em;padding:3px 8px;pointer-events:none;display:none;z-index:10;white-space:nowrap;"></div>
+  </div>
+
+  <div class="dst">
+    <span class="dst-l" id="toolStatus">Tool: Pencil · ⇧ Shift = constrain 0°/45°/90° · Ctrl+Z = Undo</span>
+    <div style="display:flex;gap:18px;align-items:center;">
+      <span id="scaleReadout" style="font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);display:none;"></span>
+      <span class="dst-r" id="drawCoords" aria-live="off">x: — · y: —</span>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
 </section>
+
 <!-- WHY -->
+
 <div class="rl"></div>
 <section class="sec" id="why" aria-labelledby="why-h">
   <div class="wrap">
@@ -1691,7 +1861,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </section>
+
 <!-- FAQ -->
+
 <div class="rl"></div>
 <section class="sec faq-sec" id="faq" aria-labelledby="faq-h">
   <div class="wrap">
@@ -1765,36 +1937,42 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
           </div>
         </div>
       </div>
-      <!-- Sticky CTA Box — April 2026 updated -->
-      <div data-r data-d="3">
-        <div class="faq-cta-box">
-          <span class="fcb-label">Next Batch — April 2026</span>
-          <h3 class="fcb-title">April 2026<br><em>batch open</em></h3>
-          <p class="fcb-body">Foundation, Intensive, Crash Course, and Software batches — all starting April 2026. Online and offline. Early enrollment gets priority scheduling and batch preference.</p>
-          <div class="fcb-seats">
-            <div class="fcb-dot"></div>
-            <p class="fcb-st">Only <strong>4 seats remaining</strong> in the April Foundation batch</p>
-          </div>
-          <!-- Countdown to April 2026 -->
-          <div id="batchCountdownBox" style="padding:12px 16px;border:1px solid var(--rule);margin-bottom:24px;text-align:center;">
-            <span style="font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-40);display:block;margin-bottom:6px;">Batch starts in</span>
-            <span id="countdownFull" style="font-family:var(--f-d);font-size:1.3rem;font-weight:300;color:var(--terra);">—</span>
-          </div>
-          <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20crack%20NATA%202026%20and%20reserve%20a%20seat%20in%20the%20April%202026%20batch%20at%20Ray%20Arch%20Academy.%20Please%20share%20program%20options%2C%20fee%2C%20and%20schedule" target="_blank" class="btn-fcb" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Reserve Your April Seat
-          </a>
-          <a href="tel:+919176463826" class="btn-fcb-line">or call us directly</a>
-          <div class="fcb-phone">
-            <span class="fcb-ph-icon">📞</span>
-            <p class="fcb-ph-n"><a href="tel:+919176463826">+91 91764 63826</a> · <a href="tel:+916381273297">+91 63812 73297</a></p>
-          </div>
-        </div>
+
+```
+  <!-- Sticky CTA Box — April 2026 updated -->
+  <div data-r data-d="3">
+    <div class="faq-cta-box">
+      <span class="fcb-label">Next Batch — April 2026</span>
+      <h3 class="fcb-title">April 2026<br><em>batch open</em></h3>
+      <p class="fcb-body">Foundation, Intensive, Crash Course, and Software batches — all starting April 2026. Online and offline. Early enrollment gets priority scheduling and batch preference.</p>
+      <div class="fcb-seats">
+        <div class="fcb-dot"></div>
+        <p class="fcb-st">Only <strong>4 seats remaining</strong> in the April Foundation batch</p>
+      </div>
+      <!-- Countdown to April 2026 -->
+      <div id="batchCountdownBox" style="padding:12px 16px;border:1px solid var(--rule);margin-bottom:24px;text-align:center;">
+        <span style="font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-40);display:block;margin-bottom:6px;">Batch starts in</span>
+        <span id="countdownFull" style="font-family:var(--f-d);font-size:1.3rem;font-weight:300;color:var(--terra);">—</span>
+      </div>
+      <a href="https://wa.me/919176463826?text=Hi%2C%20I%20want%20to%20crack%20NATA%202026%20and%20reserve%20a%20seat%20in%20the%20April%202026%20batch%20at%20Ray%20Arch%20Academy.%20Please%20share%20program%20options%2C%20fee%2C%20and%20schedule" target="_blank" class="btn-fcb" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Reserve Your April Seat
+      </a>
+      <a href="tel:+919176463826" class="btn-fcb-line">or call us directly</a>
+      <div class="fcb-phone">
+        <span class="fcb-ph-icon">📞</span>
+        <p class="fcb-ph-n"><a href="tel:+919176463826">+91 91764 63826</a> · <a href="tel:+916381273297">+91 63812 73297</a></p>
       </div>
     </div>
   </div>
+</div>
+```
+
+  </div>
 </section>
+
 <!-- CONTACT -->
+
 <div class="rl"></div>
 <section class="sec" id="contact" aria-labelledby="contact-h">
   <div class="wrap">
@@ -1815,7 +1993,9 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
   </div>
 </section>
 </main>
+
 <!-- FOOTER -->
+
 <footer>
   <div class="wrap">
     <div class="ft">
@@ -1852,6 +2032,7 @@ footer{background:var(--ink);padding:clamp(60px,8vw,96px) 0 38px;}
     </div>
   </div>
 </footer>
+
 <script>
 /* ══ CURSOR ══ */
 const cd=document.getElementById('cd'),cr=document.getElementById('cr');
@@ -1862,6 +2043,7 @@ document.querySelectorAll('a,button,.svc-row,.founder,.sw,.why-c,.prog-h,.ctile,
   el.addEventListener('mouseenter',()=>document.body.classList.add('h-on'));
   el.addEventListener('mouseleave',()=>document.body.classList.remove('h-on'));
 });
+
 /* ══ LOADER ══ */
 window.addEventListener('load',()=>{
   setTimeout(()=>{
@@ -1869,6 +2051,7 @@ window.addEventListener('load',()=>{
     setTimeout(()=>{const l=document.getElementById('loader');if(l)l.remove();},1000);
   },1700);
 });
+
 /* ══ URGENCY BANNER ══ */
 const ub=document.getElementById('urgencyBanner');
 const navEl=document.getElementById('mainNav');
@@ -1877,6 +2060,7 @@ if(ub){
   navEl.style.top=ubH+'px';
   window.addEventListener('resize',()=>{navEl.style.top=ub.offsetHeight+'px';});
 }
+
 /* ══ BATCH COUNTDOWN (to April 1, 2026) ══ */
 function updateBatchCountdown(){
   const batchDate=new Date('2026-04-01T00:00:00');
@@ -1902,6 +2086,7 @@ function updateBatchCountdown(){
 }
 updateBatchCountdown();
 setInterval(updateBatchCountdown,60000);
+
 /* ══ FLOAT CTA ══ */
 let floatShown=false;
 window.addEventListener('scroll',()=>{
@@ -1914,6 +2099,7 @@ function dismissFloat(){
   document.getElementById('floatCta').style.display='none';
   document.getElementById('floatClose').style.display='none';
 }
+
 /* ══ NAV ══ */
 const ham=document.getElementById('ham'),mob=document.getElementById('mob');
 ham.addEventListener('click',()=>{
@@ -1928,11 +2114,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
   });
 });
+
 /* ══ REVEAL ══ */
 const io=new IntersectionObserver(es=>{
   es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
 },{threshold:.07,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('[data-r]').forEach(el=>io.observe(el));
+
 /* ══ ACCORDION PROGRAMS ══ */
 function tP(h){
   const b=h.nextElementSibling,t=h.querySelector('.prog-tog'),o=b.classList.contains('open');
@@ -1940,6 +2128,7 @@ function tP(h){
   document.querySelectorAll('.prog-tog').forEach(x=>x.classList.remove('open'));
   if(!o){b.classList.add('open');t.classList.add('open');}
 }
+
 /* ══ ACCORDION FAQ ══ */
 function tF(h){
   const b=h.nextElementSibling,t=h.querySelector('.faq-tog'),o=b.classList.contains('open');
@@ -1947,6 +2136,7 @@ function tF(h){
   document.querySelectorAll('.faq-tog').forEach(x=>x.classList.remove('open'));
   if(!o){b.classList.add('open');t.classList.add('open');}
 }
+
 /* ══ GALLERY ══ */
 const slides=document.querySelectorAll('.slide');
 const dotsWrap=document.getElementById('slideDots');
@@ -1979,6 +2169,7 @@ function goSlide(n){
 function moveSlide(d){goSlide(curSlide+d);}
 function resetSlideTimer(){clearInterval(slideTimer);slideTimer=setInterval(()=>goSlide(curSlide+1),5000);}
 resetSlideTimer();
+
 /* ══ PREDICTOR ══ */
 const pfAnswers={};
 function pfNext(step,val,btn){
@@ -1992,6 +2183,7 @@ function pfNext(step,val,btn){
     document.getElementById('pfs'+(step+1)).classList.add('active');
   },320);
 }
+
 function pfShowResult(){
   const name=document.getElementById('pfName').value.trim()||'there';
   const phone=document.getElementById('pfPhone').value.trim();
@@ -2005,7 +2197,8 @@ function pfShowResult(){
   score+=(challengeMap[pfAnswers[3]]||0);
   score+=(targetBonus[pfAnswers[4]]||0);
   score=Math.min(92,Math.max(22,score));
-let prog,msg,range,pricing;
+
+  let prog,msg,range,pricing;
   if(pfAnswers[1]==='Under 1 month'){
     prog='NATA Crash Course (1-month) — ₹18,000';
     msg=`${name}, a focused sprint is exactly what you need right now.`;
@@ -2027,12 +2220,14 @@ let prog,msg,range,pricing;
   document.getElementById('pfrRange').textContent='Readiness Index — '+range;
   document.getElementById('pfrMsg').textContent=msg;
   document.getElementById('pfrProg').innerHTML=`<strong>Recommended Program:</strong> ${prog}<br><span style="font-size:.72rem;color:rgba(249,244,238,.35);">${pricing} · April 2026 batch</span>`;
+
   const waMsg=encodeURIComponent(`Hi, I'm ${name}. I completed the NATA readiness assessment on your website. My readiness score was ${score}/100 and the recommended program was "${prog}". My biggest weak area is ${pfAnswers[3]||'unknown'} and I'm targeting ${pfAnswers[4]||'a good college'}. I want to crack NATA 2026 and get into a top architecture college. ${phone?'My WhatsApp number is '+phone+'.':''} I'd like to book a free consultation for the April 2026 batch.`);
   document.getElementById('pfrWaBtn').href=`https://wa.me/919176463826?text=${waMsg}`;
   document.getElementById('pfProg').style.width='100%';
   document.getElementById('pfs5').classList.remove('active');
   document.getElementById('pfs_result').classList.add('active');
 }
+
 /* ══ MOCK TEST ══ */
 const QB={
   easy:[
@@ -2072,8 +2267,10 @@ const QB={
     {cat:'Spatial Reasoning',q:'An L-shaped floor plan: outer 10×8 m with a 4×3 m corner removed. Floor area?',opts:['68 m²','80 m²','62 m²','72 m²'],ans:0,exp:'Full rectangle = 80 m². Remove corner = 4×3 = 12 m². Final area = 80 − 12 = 68 m².'},
   ]
 };
+
 let curDiff='easy',curQ=0,answers=[],timerInt=null,totalSec=900;
 let activeQs=QB.easy;
+
 function setDiff(d,btn){
   if(timerInt)return;
   curDiff=d;activeQs=QB[d];
@@ -2082,6 +2279,7 @@ function setDiff(d,btn){
   document.getElementById('diffBadge').textContent=d.charAt(0).toUpperCase()+d.slice(1);
   document.getElementById('diffLabel').textContent=d.charAt(0).toUpperCase()+d.slice(1);
 }
+
 function startTest(){
   document.getElementById('scIntro').classList.remove('active');
   document.getElementById('scQ').classList.add('active');
@@ -2134,6 +2332,7 @@ function selectOpt(i){
 }
 function nextQ(){if(curQ<9){curQ++;renderQ();}else{clearInterval(timerInt);showResult();}}
 function prevQ(){if(curQ>0){curQ--;renderQ();}}
+
 function showResult(){
   document.getElementById('scQ').classList.remove('active');
   document.getElementById('scResult').classList.add('active');
@@ -2145,6 +2344,7 @@ function showResult(){
   document.getElementById('rbWrong').textContent=10-correct;
   document.getElementById('rbTime').textContent=used+'s';
   document.getElementById('resultSub').textContent=`You answered ${correct} out of 10 correctly on the ${curDiff} test.`;
+
   let resultMsg,rfTitle,rfSub,waText;
   if(pct>=80){
     resultMsg='Outstanding — you have real architecture aptitude.';
@@ -2167,11 +2367,13 @@ function showResult(){
     rfSub='Every student who scored below 40% in their first attempt and joined our Foundation program has gone on to crack NATA. We\'d love to be part of your story.';
     waText=`Hi, I took the NATA mock test and I need to start from scratch to crack NATA 2026. Can I book a free consultation at Ray Arch Academy?`;
   }
+
   document.getElementById('resultMsg').textContent=resultMsg;
   document.getElementById('rfTitle').textContent=rfTitle;
   document.getElementById('rfSub').textContent=rfSub;
   document.getElementById('resWaBtn').href='https://wa.me/919176463826?text='+encodeURIComponent(waText);
   document.getElementById('resultPct').innerHTML=pct+'<span>%</span>';
+
   setTimeout(()=>{
     const fill=document.getElementById('ringFill');
     const circ=2*Math.PI*60;
@@ -2179,6 +2381,7 @@ function showResult(){
     fill.style.strokeDashoffset=circ-(circ*pct/100);
   },200);
   document.getElementById('progressFill').style.width='100%';
+
   const ec=document.getElementById('expContainer');ec.innerHTML='';
   activeQs.forEach((q,i)=>{
     const isCorrect=answers[i]===q.ans;
@@ -2192,6 +2395,7 @@ function showResult(){
     ec.appendChild(div);
   });
 }
+
 function retryTest(){
   clearInterval(timerInt);timerInt=null;totalSec=900;
   document.getElementById('timerDisplay').textContent='15:00';
@@ -2202,164 +2406,751 @@ function retryTest(){
   document.getElementById('scResult').classList.remove('active');
   document.getElementById('scIntro').classList.add('active');
 }
-/* ══ DRAWING BOARD ══ */
-const canvas=document.getElementById('drawCanvas');
-const pCanvas=document.getElementById('perspCanvas');
-const ctx=canvas.getContext('2d');
-const pCtx=pCanvas.getContext('2d');
-let drawing=false,tool='pencil',color='#1c1714',size=3,opacity=.9;
-let lastX=0,lastY=0,histArr=[],histLim=40;
-let perspGrid='none',gridAlpha=.22;
+
+/* ══════════════════════════════════════════════
+   DRAWING BOARD — FULL ENHANCED VERSION
+   Features: freehand, line, rect, circle, eraser,
+   snap-to-grid, shift-constrain, undo/redo,
+   scale ruler, templates, guided mode
+══════════════════════════════════════════════ */
+const canvas    = document.getElementById('drawCanvas');
+const pCanvas   = document.getElementById('perspCanvas');
+const pvCanvas  = document.getElementById('previewCanvas');
+const rulerHC   = document.getElementById('rulerH');
+const rulerVC   = document.getElementById('rulerV');
+const ctx       = canvas.getContext('2d');
+const pCtx      = pCanvas.getContext('2d');
+const pvCtx     = pvCanvas.getContext('2d');
+const rHCtx     = rulerHC.getContext('2d');
+const rVCtx     = rulerVC.getContext('2d');
+
+let drawing=false, tool='pencil', color='#1c1714', size=3, opacity=.9;
+let lastX=0, lastY=0, startX=0, startY=0;
+let histArr=[], redoArr=[], histLim=50;
+let perspGrid='none', gridAlpha=.22;
+let snapOn=false, rulerOn=false;
+let currentScale=100; // 1:100 default — 1px = 1cm at scale
+let shiftDown=false;
+
+/* ── Resize ── */
 function resizeCanvas(){
   const w=canvas.offsetWidth;
-  const h=Math.max(460,Math.round(w*.58));
-  const data=ctx.getImageData(0,0,canvas.width,canvas.height);
-  canvas.width=w;canvas.height=h;
-  pCanvas.width=w;pCanvas.height=h;
-  ctx.fillStyle='#f9f4ee';ctx.fillRect(0,0,w,h);
-  try{ctx.putImageData(data,0,0);}catch(e){}
-  drawPG();
+  const h=Math.max(480,Math.round(w*.6));
+  const saved=histArr.length?histArr[histArr.length-1]:null;
+  [canvas,pCanvas,pvCanvas].forEach(c=>{c.width=w;c.height=h;});
+  ctx.fillStyle='#f9f4ee'; ctx.fillRect(0,0,w,h);
+  if(saved){const img=new Image();img.src=saved;img.onload=()=>ctx.drawImage(img,0,0);}
+  rulerHC.width=w-28; rulerHC.height=22;
+  rulerVC.width=28;   rulerVC.height=h-22;
+  drawPG(); if(rulerOn)drawRulers();
 }
 resizeCanvas();
 window.addEventListener('resize',()=>setTimeout(resizeCanvas,120));
-function saveState(){histArr.push(canvas.toDataURL());if(histArr.length>histLim)histArr.shift();}
+
+/* ── History ── */
+function saveState(){
+  histArr.push(canvas.toDataURL());
+  if(histArr.length>histLim)histArr.shift();
+  redoArr=[];
+}
 saveState();
+
+/* ── Coordinate helpers ── */
 function getPos(e){
   const r=canvas.getBoundingClientRect();
-  const sx=canvas.width/r.width,sy=canvas.height/r.height;
-  if(e.touches){const t=e.touches[0];return{x:(t.clientX-r.left)*sx,y:(t.clientY-r.top)*sy};}
-  return{x:(e.clientX-r.left)*sx,y:(e.clientY-r.top)*sy};
-}
-function startDraw(e){e.preventDefault();const p=getPos(e);lastX=p.x;lastY=p.y;drawing=true;saveState();}
-function doDraw(e){
-  e.preventDefault();if(!drawing)return;
-  const p=getPos(e);
-  document.getElementById('drawCoords').textContent=`x: ${Math.round(p.x)} · y: ${Math.round(p.y)}`;
-  ctx.globalCompositeOperation=tool==='eraser'?'destination-out':'source-over';
-  ctx.globalAlpha=tool==='marker'?opacity*.55:tool==='charcoal'?opacity*.12:opacity;
-  ctx.lineJoin='round';ctx.lineCap='round';
-  if(tool==='eraser'){ctx.strokeStyle='rgba(0,0,0,1)';ctx.lineWidth=size*4;}
-  else{ctx.strokeStyle=color;ctx.lineWidth=tool==='pen'?size*.7:tool==='marker'?size*2.5:tool==='charcoal'?size*2:size;}
-  ctx.beginPath();ctx.moveTo(lastX,lastY);ctx.lineTo(p.x,p.y);ctx.stroke();
-  if(tool==='charcoal'){
-    for(let i=0;i<3;i++){
-      const jx=p.x+(Math.random()-.5)*size*1.5,jy=p.y+(Math.random()-.5)*size*1.5;
-      ctx.beginPath();ctx.arc(jx,jy,Math.random()*size*.5,0,Math.PI*2);
-      ctx.fillStyle=color;ctx.globalAlpha=opacity*.06;ctx.fill();
-    }
-    ctx.globalAlpha=opacity*.12;
+  const sx=canvas.width/r.width, sy=canvas.height/r.height;
+  let x,y;
+  if(e.touches){const t=e.touches[0];x=(t.clientX-r.left)*sx;y=(t.clientY-r.top)*sy;}
+  else{x=(e.clientX-r.left)*sx;y=(e.clientY-r.top)*sy;}
+  if(snapOn){
+    const gs=Math.round(canvas.width/20);
+    x=Math.round(x/gs)*gs; y=Math.round(y/gs)*gs;
   }
-  lastX=p.x;lastY=p.y;
+  return{x,y};
 }
-function stopDraw(){drawing=false;ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';}
+
+function constrainAngle(x0,y0,x1,y1){
+  const dx=x1-x0,dy=y1-y0;
+  const angle=Math.atan2(dy,dx)*180/Math.PI;
+  const snapped=Math.round(angle/45)*45;
+  const rad=snapped*Math.PI/180;
+  const len=Math.sqrt(dx*dx+dy*dy);
+  return{x:x0+len*Math.cos(rad),y:y0+len*Math.sin(rad)};
+}
+
+/* ── Crosshair tooltip ── */
+function showTip(e,x,y,extra){
+  const tip=document.getElementById('crosshairTip');
+  const r=canvas.getBoundingClientRect();
+  const realX=currentScale>0?`${(x/canvas.width*(canvas.width/canvas.offsetWidth)*currentScale/100).toFixed(2)}m`:`${Math.round(x)}px`;
+  const realY=currentScale>0?`${(y/canvas.height*(canvas.height/canvas.offsetHeight)*currentScale/100).toFixed(2)}m`:`${Math.round(y)}px`;
+  tip.style.display='block';
+  tip.style.left=(e.offsetX+14)+'px';
+  tip.style.top=(e.offsetY-26)+'px';
+  tip.textContent=`x:${realX} y:${realY}${extra?'  '+extra:''}`;
+  document.getElementById('drawCoords').textContent=`x: ${realX} · y: ${realY}`;
+}
+
+/* ── Drawing core ── */
+function applyStrokeStyle(){
+  ctx.lineJoin='round'; ctx.lineCap='round';
+  if(tool==='eraser'){
+    ctx.globalCompositeOperation='destination-out';
+    ctx.strokeStyle='rgba(0,0,0,1)';
+    ctx.lineWidth=size*4;
+  }else{
+    ctx.globalCompositeOperation='source-over';
+    ctx.strokeStyle=color;
+    ctx.globalAlpha=tool==='marker'?opacity*.55:tool==='charcoal'?opacity*.15:opacity;
+    ctx.lineWidth=tool==='pen'?size*.7:tool==='marker'?size*2.5:tool==='charcoal'?size*2:size;
+  }
+}
+
+function startDraw(e){
+  e.preventDefault();
+  const p=getPos(e);
+  startX=lastX=p.x; startY=lastY=p.y;
+  drawing=true;
+  if(['pencil','pen','charcoal','marker','eraser'].includes(tool))saveState();
+}
+
+function doDraw(e){
+  e.preventDefault();
+  if(!e.touches)showTip(e,0,0,'');
+  const p=getPos(e);
+  let cx=p.x,cy=p.y;
+
+  // Shift-constrain for line/rect/pencil
+  if(shiftDown&&drawing&&tool!=='circle'){
+    const c=constrainAngle(startX,startY,cx,cy);
+    cx=c.x;cy=c.y;
+  }
+
+  if(!drawing){
+    // Just update cursor position tooltip on hover
+    const r=canvas.getBoundingClientRect();
+    const sx=canvas.width/r.width,sy=canvas.height/r.height;
+    const rawX=(e.clientX-r.left)*sx,rawY=(e.clientY-r.top)*sy;
+    showTip(e,rawX,rawY,'');
+    return;
+  }
+
+  if(tool==='pencil'||tool==='pen'||tool==='charcoal'||tool==='marker'||tool==='eraser'){
+    applyStrokeStyle();
+    ctx.beginPath();ctx.moveTo(lastX,lastY);ctx.lineTo(cx,cy);ctx.stroke();
+    if(tool==='charcoal'){
+      for(let i=0;i<3;i++){
+        const jx=cx+(Math.random()-.5)*size*1.5,jy=cy+(Math.random()-.5)*size*1.5;
+        ctx.beginPath();ctx.arc(jx,jy,Math.random()*size*.4,0,Math.PI*2);
+        ctx.fillStyle=color;ctx.globalAlpha=opacity*.05;ctx.fill();
+      }
+    }
+    ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+    lastX=cx;lastY=cy;
+  } else {
+    // Shape preview — draw on pvCanvas
+    pvCtx.clearRect(0,0,pvCanvas.width,pvCanvas.height);
+    pvCtx.strokeStyle=color;
+    pvCtx.globalAlpha=opacity;
+    pvCtx.lineWidth=size;
+    pvCtx.lineJoin='round';pvCtx.lineCap='round';
+    pvCtx.beginPath();
+    if(tool==='line'){
+      pvCtx.moveTo(startX,startY);pvCtx.lineTo(cx,cy);
+      pvCtx.stroke();
+      // Show length indicator
+      const dx=cx-startX,dy=cy-startY;
+      const len=Math.sqrt(dx*dx+dy*dy);
+      const realLen=currentScale>0?(len/canvas.width*(canvas.offsetWidth/canvas.width)*currentScale/100).toFixed(2)+'m':Math.round(len)+'px';
+      showTip(e,cx,cy,`len:${realLen}`);
+    }else if(tool==='rect'){
+      pvCtx.strokeRect(startX,startY,cx-startX,cy-startY);
+      const w=Math.abs(cx-startX),h=Math.abs(cy-startY);
+      const rw=currentScale>0?(w/canvas.width*canvas.offsetWidth*currentScale/10000).toFixed(2)+'m':Math.round(w)+'px';
+      const rh=currentScale>0?(h/canvas.height*canvas.offsetHeight*currentScale/10000).toFixed(2)+'m':Math.round(h)+'px';
+      showTip(e,cx,cy,`${rw}×${rh}`);
+    }else if(tool==='circle'){
+      const rx=Math.abs(cx-startX)/2,ry=Math.abs(cy-startY)/2;
+      const mx=(startX+cx)/2,my=(startY+cy)/2;
+      pvCtx.ellipse(mx,my,Math.max(rx,1),Math.max(ry,1),0,0,Math.PI*2);
+      pvCtx.stroke();
+    }
+    pvCtx.globalAlpha=1;
+  }
+}
+
+function stopDraw(e){
+  if(!drawing)return;
+  drawing=false;
+  const p=e&&e.changedTouches?{x:(e.changedTouches[0].clientX-canvas.getBoundingClientRect().left)*(canvas.width/canvas.getBoundingClientRect().width),y:(e.changedTouches[0].clientY-canvas.getBoundingClientRect().top)*(canvas.height/canvas.getBoundingClientRect().height)}:getPos(e||{clientX:lastX,clientY:lastY});
+  let cx=p.x,cy=p.y;
+  if(shiftDown&&['line','rect'].includes(tool)){
+    const c=constrainAngle(startX,startY,cx,cy);
+    cx=c.x;cy=c.y;
+  }
+
+  if(['line','rect','circle'].includes(tool)){
+    saveState();
+    applyStrokeStyle();
+    ctx.beginPath();
+    if(tool==='line'){ctx.moveTo(startX,startY);ctx.lineTo(cx,cy);ctx.stroke();}
+    else if(tool==='rect'){ctx.strokeRect(startX,startY,cx-startX,cy-startY);}
+    else if(tool==='circle'){
+      const rx=Math.abs(cx-startX)/2,ry=Math.abs(cy-startY)/2;
+      ctx.ellipse((startX+cx)/2,(startY+cy)/2,Math.max(rx,1),Math.max(ry,1),0,0,Math.PI*2);
+      ctx.stroke();
+    }
+    ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+    pvCtx.clearRect(0,0,pvCanvas.width,pvCanvas.height);
+  }
+  document.getElementById('crosshairTip').style.display='none';
+}
+
 canvas.addEventListener('mousedown',startDraw);
 canvas.addEventListener('mousemove',doDraw);
 canvas.addEventListener('mouseup',stopDraw);
-canvas.addEventListener('mouseleave',stopDraw);
+canvas.addEventListener('mouseleave',()=>{
+  drawing=false;pvCtx.clearRect(0,0,pvCanvas.width,pvCanvas.height);
+  document.getElementById('crosshairTip').style.display='none';
+});
 canvas.addEventListener('touchstart',startDraw,{passive:false});
 canvas.addEventListener('touchmove',doDraw,{passive:false});
 canvas.addEventListener('touchend',stopDraw);
+
+/* Keyboard shortcuts */
+window.addEventListener('keydown',e=>{
+  if(e.key==='Shift')shiftDown=true;
+  if((e.ctrlKey||e.metaKey)&&e.key==='z'){e.preventDefault();undoDraw();}
+  if((e.ctrlKey||e.metaKey)&&e.key==='y'){e.preventDefault();redoDraw();}
+  if(e.key==='l'||e.key==='L')setTool('line');
+  if(e.key==='p'||e.key==='P')setTool('pencil');
+  if(e.key==='e'||e.key==='E')setTool('eraser');
+  if(e.key==='r'||e.key==='R')setTool('rect');
+});
+window.addEventListener('keyup',e=>{if(e.key==='Shift')shiftDown=false;});
+
+/* ── Tool switching ── */
 function setTool(t){
   tool=t;
   document.querySelectorAll('.tbb[id^=tool]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
-  document.getElementById('tool'+t.charAt(0).toUpperCase()+t.slice(1)).classList.add('active');
-  document.getElementById('tool'+t.charAt(0).toUpperCase()+t.slice(1)).setAttribute('aria-pressed','true');
-  document.getElementById('toolStatus').textContent=`Tool: ${t.charAt(0).toUpperCase()+t.slice(1)} · Grid: ${perspGrid==='none'?'Off':perspGrid.toUpperCase()}`;
+  const el=document.getElementById('tool'+t.charAt(0).toUpperCase()+t.slice(1));
+  if(el){el.classList.add('active');el.setAttribute('aria-pressed','true');}
+  const gridName=perspGrid==='none'?'Off':perspGrid==='1pp'?'1-Point':perspGrid==='2pp'?'2-Point':perspGrid==='iso'?'Isometric':'Grid';
+  document.getElementById('toolStatus').textContent=`Tool: ${t.charAt(0).toUpperCase()+t.slice(1)} · Grid: ${gridName} · ⇧Shift=constrain · Ctrl+Z=Undo · L=Line · P=Pencil`;
   canvas.style.cursor=t==='eraser'?'cell':'crosshair';
 }
+
 function setColor(c,el){
   color=c;
   document.querySelectorAll('.sw-dot').forEach(s=>s.classList.remove('active'));
   if(el)el.classList.add('active');
-  document.getElementById('colPick').value=c.length===7?c:'#1c1714';
+  const cp=document.getElementById('colPick');
+  if(cp&&c.length===7)cp.value=c;
   if(tool==='eraser')setTool('pencil');
 }
+
 function updateSize(v){size=parseInt(v);document.getElementById('sizeVal').textContent=v;}
 function updateOpacity(v){opacity=parseInt(v)/100;}
 function updateGO(v){gridAlpha=parseInt(v)/100;drawPG();}
+
+/* ── Undo / Redo ── */
 function undoDraw(){
   if(histArr.length>1){
-    histArr.pop();
+    redoArr.push(histArr.pop());
     const img=new Image();
     img.src=histArr[histArr.length-1];
     img.onload=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0);};
-  }else{ctx.fillStyle='#f9f4ee';ctx.fillRect(0,0,canvas.width,canvas.height);}
+  }
 }
+function redoDraw(){
+  if(redoArr.length){
+    const snap=redoArr.pop();
+    histArr.push(snap);
+    const img=new Image();img.src=snap;
+    img.onload=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0);};
+  }
+}
+
 function clearCanvas(){saveState();ctx.fillStyle='#f9f4ee';ctx.fillRect(0,0,canvas.width,canvas.height);}
+
 function saveDrawing(){
   const tmp=document.createElement('canvas');
   tmp.width=canvas.width;tmp.height=canvas.height;
   const tc=tmp.getContext('2d');
-  tc.drawImage(canvas,0,0);tc.drawImage(pCanvas,0,0);
+  if(rulerOn){
+    // offset for rulers
+    tc.drawImage(canvas,28,22);
+    tc.drawImage(pCanvas,28,22);
+  } else {
+    tc.drawImage(canvas,0,0);
+    tc.drawImage(pCanvas,0,0);
+  }
   const a=document.createElement('a');
   a.download='rayarch-sketch.png';a.href=tmp.toDataURL('image/png');a.click();
 }
+
+/* ── Snap ── */
+function toggleSnap(){
+  snapOn=!snapOn;
+  const btn=document.getElementById('snapBtn');
+  btn.classList.toggle('active',snapOn);
+  btn.setAttribute('aria-pressed',snapOn);
+}
+
+/* ── Scale ── */
+function updateScale(v){
+  currentScale=parseInt(v);
+  const ro=document.getElementById('scaleReadout');
+  if(currentScale>0){
+    ro.style.display='block';
+    ro.textContent=`Scale 1:${currentScale} — 1 grid unit = ${currentScale}cm`;
+  }else{ro.style.display='none';}
+  if(rulerOn)drawRulers();
+}
+
+/* ── Ruler ── */
+function toggleRuler(){
+  rulerOn=!rulerOn;
+  const btn=document.getElementById('rulerBtn');
+  btn.classList.toggle('active',rulerOn);
+  btn.setAttribute('aria-pressed',rulerOn);
+  rulerHC.style.display=rulerOn?'block':'none';
+  rulerVC.style.display=rulerOn?'block':'none';
+  if(rulerOn)drawRulers();
+}
+
+function drawRulers(){
+  const w=rulerHC.width,hH=rulerHC.height;
+  const vW=rulerVC.width,vH=rulerVC.height;
+  const bg='rgba(243,237,227,0.96)';
+  const tc='rgba(28,23,20,0.5)';
+  const mc='#c1440e';
+
+  rHCtx.clearRect(0,0,w,hH);
+  rHCtx.fillStyle=bg;rHCtx.fillRect(0,0,w,hH);
+  rHCtx.fillStyle=tc;rHCtx.font='8px Jost,sans-serif';
+
+  rVCtx.clearRect(0,0,vW,vH);
+  rVCtx.fillStyle=bg;rVCtx.fillRect(0,0,vW,vH);
+  rVCtx.fillStyle=tc;rVCtx.font='8px Jost,sans-serif';
+
+  // Horizontal ruler
+  const step=currentScale>0?Math.max(20,Math.round(canvas.width/20)):Math.round(canvas.width/20);
+  const unitLabel=currentScale>0?`${currentScale}cm`:'px';
+  for(let x=0;x<w;x+=step){
+    const tickH=(x%(step*5)===0)?hH*.6:(x%(step*2)===0)?hH*.4:hH*.25;
+    rHCtx.strokeStyle=tc;rHCtx.lineWidth=.8;
+    rHCtx.beginPath();rHCtx.moveTo(x,hH);rHCtx.lineTo(x,hH-tickH);rHCtx.stroke();
+    if(x%(step*5)===0){
+      const label=currentScale>0?`${Math.round(x/step)*currentScale/100}m`:x;
+      rHCtx.fillStyle=tc;rHCtx.fillText(label,x+2,hH*.55);
+    }
+  }
+  rHCtx.strokeStyle=mc;rHCtx.lineWidth=1;
+  rHCtx.beginPath();rHCtx.moveTo(0,hH);rHCtx.lineTo(w,hH);rHCtx.stroke();
+
+  // Vertical ruler
+  for(let y=0;y<vH;y+=step){
+    const tickW=(y%(step*5)===0)?vW*.6:(y%(step*2)===0)?vW*.4:vW*.25;
+    rVCtx.strokeStyle=tc;rVCtx.lineWidth=.8;
+    rVCtx.beginPath();rVCtx.moveTo(vW,y);rVCtx.lineTo(vW-tickW,y);rVCtx.stroke();
+    if(y%(step*5)===0){
+      rVCtx.save();
+      rVCtx.translate(vW*.4,y);rVCtx.rotate(-Math.PI/2);
+      const label=currentScale>0?`${Math.round(y/step)*currentScale/100}m`:y;
+      rVCtx.fillText(label,2,0);
+      rVCtx.restore();
+    }
+  }
+  rVCtx.strokeStyle=mc;rVCtx.lineWidth=1;
+  rVCtx.beginPath();rVCtx.moveTo(vW,0);rVCtx.lineTo(vW,vH);rVCtx.stroke();
+}
+
 /* ══ PERSPECTIVE GRIDS ══ */
 function setPG(type,btn){
   perspGrid=type;
-  document.querySelectorAll('.pb').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
+  // Only update grid buttons, not all .pb buttons
+  document.querySelectorAll('.persp-bar .pb').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
   if(btn){btn.classList.add('active');btn.setAttribute('aria-pressed','true');}
   drawPG();
-  document.getElementById('toolStatus').textContent=`Tool: ${tool.charAt(0).toUpperCase()+tool.slice(1)} · Grid: ${type==='none'?'Off':type==='1pp'?'1-Point':type==='2pp'?'2-Point':type==='iso'?'Isometric':'Flat Grid'}`;
+  const gname=type==='none'?'Off':type==='1pp'?'1-Point':type==='2pp'?'2-Point':type==='iso'?'Isometric':'Flat Grid';
+  document.getElementById('toolStatus').textContent=`Tool: ${tool.charAt(0).toUpperCase()+tool.slice(1)} · Grid: ${gname} · ⇧Shift=constrain · Ctrl+Z=Undo`;
 }
+
 function drawPG(){
   const w=pCanvas.width,h=pCanvas.height;
   pCtx.clearRect(0,0,w,h);
   if(perspGrid==='none')return;
   const lc=`rgba(28,23,20,${gridAlpha})`;
-  const ac=`rgba(193,68,14,${Math.min(gridAlpha*1.6,.9)})`;
-  pCtx.strokeStyle=lc;pCtx.lineWidth=.7;
+  const ac=`rgba(193,68,14,${Math.min(gridAlpha*1.8,.95)})`;
+
   if(perspGrid==='1pp'){
     const vpX=w/2,vpY=h*.42;
-    pCtx.strokeStyle=ac;pCtx.lineWidth=1.2;
+    pCtx.strokeStyle=ac;pCtx.lineWidth=1.4;
     pCtx.beginPath();pCtx.moveTo(0,vpY);pCtx.lineTo(w,vpY);pCtx.stroke();
-    pCtx.fillStyle=ac;pCtx.beginPath();pCtx.arc(vpX,vpY,4,0,Math.PI*2);pCtx.fill();
-    pCtx.strokeStyle=lc;pCtx.lineWidth=.7;
-    for(let i=0;i<=18;i++){const bx=(i/18)*w;pCtx.beginPath();pCtx.moveTo(vpX,vpY);pCtx.lineTo(bx,h);pCtx.stroke();}
-    const vs=w/12;
-    for(let x=0;x<=w;x+=vs){pCtx.beginPath();pCtx.moveTo(x,0);pCtx.lineTo(x,h);pCtx.stroke();}
-    for(let i=1;i<=7;i++){const hy=vpY+(h-vpY)*Math.pow(i/7,1.8);pCtx.beginPath();pCtx.moveTo(0,hy);pCtx.lineTo(w,hy);pCtx.stroke();}
-    for(let i=1;i<=4;i++){const hy=vpY-vpY*(i/5);pCtx.beginPath();pCtx.moveTo(0,hy);pCtx.lineTo(w,hy);pCtx.stroke();}
-    pCtx.fillStyle=ac;pCtx.font='500 11px Jost,sans-serif';pCtx.fillText('VP',vpX+7,vpY-9);
+    pCtx.fillStyle=ac;pCtx.beginPath();pCtx.arc(vpX,vpY,5,0,Math.PI*2);pCtx.fill();
+    pCtx.strokeStyle=lc;pCtx.lineWidth=.6;
+    for(let i=0;i<=20;i++){const bx=(i/20)*w;pCtx.beginPath();pCtx.moveTo(vpX,vpY);pCtx.lineTo(bx,h);pCtx.stroke();}
+    for(let i=0;i<=20;i++){const bx=(i/20)*w;pCtx.beginPath();pCtx.moveTo(vpX,vpY);pCtx.lineTo(bx,0);pCtx.stroke();}
+    const vs=w/14;
+    for(let x=0;x<=w;x+=vs){pCtx.strokeStyle=lc;pCtx.lineWidth=.5;pCtx.beginPath();pCtx.moveTo(x,0);pCtx.lineTo(x,h);pCtx.stroke();}
+    for(let i=1;i<=9;i++){const hy=vpY+(h-vpY)*Math.pow(i/9,1.6);pCtx.beginPath();pCtx.moveTo(0,hy);pCtx.lineTo(w,hy);pCtx.stroke();}
+    for(let i=1;i<=5;i++){const hy=vpY*(1-i/6);pCtx.beginPath();pCtx.moveTo(0,hy);pCtx.lineTo(w,hy);pCtx.stroke();}
+    pCtx.fillStyle=ac;pCtx.font='bold 11px Jost,sans-serif';pCtx.fillText('VP',vpX+8,vpY-10);
+    // Draw horizon label
+    pCtx.fillStyle=lc;pCtx.font='9px Jost,sans-serif';pCtx.fillText('HORIZON LINE',12,vpY-6);
+
   }else if(perspGrid==='2pp'){
-    const vpY=h*.40,vpL=-w*.15,vpR=w*1.15;
-    pCtx.strokeStyle=ac;pCtx.lineWidth=1.2;
+    const vpY=h*.40,vpL=w*-.12,vpR=w*1.12;
+    pCtx.strokeStyle=ac;pCtx.lineWidth=1.4;
     pCtx.beginPath();pCtx.moveTo(0,vpY);pCtx.lineTo(w,vpY);pCtx.stroke();
-    pCtx.strokeStyle=lc;pCtx.lineWidth=.7;
-    pCtx.fillStyle=ac;pCtx.font='500 11px Jost,sans-serif';
-    pCtx.fillText('VPL',4,vpY-7);pCtx.fillText('VPR',w-30,vpY-7);
-    for(let i=0;i<=12;i++){const bx=w*.1+(i/12)*w*.8;
+    pCtx.strokeStyle=lc;pCtx.lineWidth=.6;
+    for(let i=0;i<=14;i++){const bx=w*.05+(i/14)*w*.9;
       pCtx.beginPath();pCtx.moveTo(vpL,vpY);pCtx.lineTo(bx,h);pCtx.stroke();
       pCtx.beginPath();pCtx.moveTo(vpL,vpY);pCtx.lineTo(bx,0);pCtx.stroke();
       pCtx.beginPath();pCtx.moveTo(vpR,vpY);pCtx.lineTo(bx,h);pCtx.stroke();
       pCtx.beginPath();pCtx.moveTo(vpR,vpY);pCtx.lineTo(bx,0);pCtx.stroke();
     }
-    const vs2=w/10;
-    for(let x=vs2;x<w;x+=vs2){pCtx.beginPath();pCtx.moveTo(x,0);pCtx.lineTo(x,h);pCtx.stroke();}
+    // Verticals
+    for(let x=w/12;x<w;x+=w/12){pCtx.strokeStyle=`rgba(28,23,20,${gridAlpha*.6})`;pCtx.lineWidth=.4;pCtx.beginPath();pCtx.moveTo(x,0);pCtx.lineTo(x,h);pCtx.stroke();}
+    pCtx.fillStyle=ac;pCtx.font='bold 11px Jost,sans-serif';
+    pCtx.fillText('VPL',6,vpY-8);pCtx.fillText('VPR',w-34,vpY-8);
+    pCtx.fillStyle=lc;pCtx.font='9px Jost,sans-serif';pCtx.fillText('HORIZON LINE',w/2-40,vpY-6);
+
   }else if(perspGrid==='iso'){
-    const step=Math.round(w/18);
-    const sl=Math.tan(30*Math.PI/180);
-    for(let y=0;y<=h+step;y+=step){pCtx.beginPath();pCtx.moveTo(0,y);pCtx.lineTo(w,y);pCtx.stroke();}
-    for(let sx=-h/sl;sx<w+h/sl;sx+=step*2){
-      pCtx.beginPath();pCtx.moveTo(sx,0);pCtx.lineTo(sx+h/sl,h);pCtx.stroke();
-      pCtx.beginPath();pCtx.moveTo(w-sx,0);pCtx.lineTo(w-sx-h/sl,h);pCtx.stroke();
-    }
-    pCtx.fillStyle=ac;pCtx.font='500 11px Jost,sans-serif';pCtx.fillText('ISO 30°',8,h-10);
-  }else if(perspGrid==='grid'){
     const step=Math.round(w/20);
+    const ang=Math.tan(30*Math.PI/180);
+    pCtx.strokeStyle=lc;pCtx.lineWidth=.55;
+    // Horizontal lines
+    for(let y=0;y<=h+step;y+=step){pCtx.beginPath();pCtx.moveTo(0,y);pCtx.lineTo(w,y);pCtx.stroke();}
+    // 30-degree lines going right
+    for(let sx=-h/ang;sx<w+h/ang;sx+=step*2){
+      pCtx.beginPath();pCtx.moveTo(sx,0);pCtx.lineTo(sx+h/ang,h);pCtx.stroke();
+    }
+    // 30-degree lines going left
+    for(let sx=0;sx<w*2+h/ang;sx+=step*2){
+      pCtx.beginPath();pCtx.moveTo(sx,0);pCtx.lineTo(sx-h/ang,h);pCtx.stroke();
+    }
+    pCtx.fillStyle=ac;pCtx.font='bold 10px Jost,sans-serif';pCtx.fillText('ISOMETRIC 30°',10,h-12);
+
+  }else if(perspGrid==='grid'){
+    const step=Math.round(w/24);
     for(let x=0;x<=w;x+=step){
-      pCtx.strokeStyle=x%(step*4)===0?ac:lc;
-      pCtx.lineWidth=x%(step*4)===0?.9:.45;
+      const major=x%(step*4)===0;
+      pCtx.strokeStyle=major?ac:lc;
+      pCtx.lineWidth=major?.8:.35;
       pCtx.beginPath();pCtx.moveTo(x,0);pCtx.lineTo(x,h);pCtx.stroke();
+      // Scale labels on major lines
+      if(major&&currentScale>0){
+        const label=`${Math.round(x/step*(step/canvas.width)*canvas.offsetWidth*currentScale/10000)}m`;
+        pCtx.fillStyle=ac;pCtx.font='8px Jost,sans-serif';pCtx.fillText(label,x+2,10);
+      }
     }
     for(let y=0;y<=h;y+=step){
-      pCtx.strokeStyle=y%(step*4)===0?ac:lc;
-      pCtx.lineWidth=y%(step*4)===0?.9:.45;
+      const major=y%(step*4)===0;
+      pCtx.strokeStyle=major?ac:lc;
+      pCtx.lineWidth=major?.8:.35;
       pCtx.beginPath();pCtx.moveTo(0,y);pCtx.lineTo(w,y);pCtx.stroke();
     }
   }
 }
+
+/* ══ EXAMPLE TEMPLATES ══ */
+const TEMPLATES={
+  room1pp:{
+    grid:'1pp',
+    label:'Room Interior — 1-Point Perspective',
+    guided:[
+      'Step 1: The horizon line is already set at 42% height. This is your eye level. Notice the VP (Vanishing Point) at the centre.',
+      'Step 2: Draw a rectangle on the back wall — start roughly 30% from each edge, between the top and bottom of the canvas. This is the far wall of your room.',
+      'Step 3: From each corner of your back-wall rectangle, draw lines TO the VP. These are your ceiling, floor, and side wall edges receding into distance.',
+      'Step 4: Add a door on the back wall — a vertical rectangle. Now draw lines from its top corners to the VP to show depth.',
+      'Step 5: Add a window. Draw a rectangle on the side wall using the receding lines as guides. Shade lightly with the charcoal tool.',
+      'Step 6: Add floor tiles — draw horizontal lines between the receding floor lines, spaced closer together as they approach the VP.',
+      'Great work! This is a classic 1-point interior perspective — one of the most common NATA drawing types. Save your drawing.',
+    ],
+    draw(c,ctx){
+      const w=c.width,h=c.height;
+      const vpX=w/2,vpY=h*.42;
+      ctx.strokeStyle='rgba(28,23,20,0.18)';
+      ctx.lineWidth=1.2;ctx.setLineDash([5,4]);
+      // Back wall
+      const bL=w*.28,bR=w*.72,bT=h*.18,bB=h*.78;
+      ctx.strokeRect(bL,bT,bR-bL,bB-bT);
+      // Ceiling corners to VP
+      [[bL,bT],[bR,bT],[bL,bB],[bR,bB]].forEach(([x,y])=>{
+        ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(vpX,vpY);ctx.stroke();
+      });
+      // Far edges going to canvas edges
+      const ext=0;
+      ctx.beginPath();ctx.moveTo(bL,bT);ctx.lineTo(0,h*.02);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(bR,bT);ctx.lineTo(w,h*.02);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(bL,bB);ctx.lineTo(0,h);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(bR,bB);ctx.lineTo(w,h);ctx.stroke();
+      // Door on back wall
+      const dL=w*.42,dR=w*.52,dB=bB,dT=bB-(bB-bT)*.65;
+      ctx.strokeRect(dL,dT,dR-dL,dB-dT);
+      // Label
+      ctx.setLineDash([]);
+      ctx.fillStyle='rgba(193,68,14,0.25)';
+      ctx.font='11px Jost,sans-serif';
+      ctx.fillText('← Trace over me in a darker colour →',w*.22,h*.93);
+    }
+  },
+  building2pp:{
+    grid:'2pp',
+    label:'Building Exterior — 2-Point Perspective',
+    guided:[
+      'Step 1: The two vanishing points (VPL and VPR) are on the horizon line. All horizontal lines of the building must go to one of these two points.',
+      'Step 2: Draw a vertical line near the centre — this is the front corner of the building. It should cross the horizon line.',
+      'Step 3: From the top of that vertical line, draw lines going left to VPL and right to VPR. These are your roofline edges.',
+      'Step 4: From the bottom of your corner line, draw lines to both VPL and VPR — these are your ground edges.',
+      'Step 5: Add two more vertical lines on each side to define the building width on both faces.',
+      'Step 6: Add windows on each face — small rectangles whose top and bottom lines converge to the same vanishing point as that face.',
+      'Step 7: Add a simple flat roof by connecting the top verticals with lines going to each VP. Shade one face darker than the other to show light direction.',
+      'Excellent! 2-point perspective is the most-tested form in NATA. Save your drawing.',
+    ],
+    draw(c,ctx){
+      const w=c.width,h=c.height;
+      const vpY=h*.40,vpL=w*-.12,vpR=w*1.12;
+      const cX=w*.48,cTop=h*.12,cBot=h*.82;
+      ctx.strokeStyle='rgba(28,23,20,0.18)';
+      ctx.lineWidth=1.2;ctx.setLineDash([5,4]);
+      // Front corner
+      ctx.beginPath();ctx.moveTo(cX,cTop);ctx.lineTo(cX,cBot);ctx.stroke();
+      // Roof to both VPs
+      [[cX,cTop,vpL,vpY],[cX,cTop,vpR,vpY]].forEach(([x1,y1,x2,y2])=>{
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
+      });
+      // Ground to both VPs
+      [[cX,cBot,vpL,vpY],[cX,cBot,vpR,vpY]].forEach(([x1,y1,x2,y2])=>{
+        ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();
+      });
+      // Left face vertical
+      const lFX=w*.25;
+      const lFTop=vpY+(lFX-vpL)*(cTop-vpY)/(cX-vpL);
+      const lFBot=vpY+(lFX-vpL)*(cBot-vpY)/(cX-vpL);
+      ctx.beginPath();ctx.moveTo(lFX,lFTop);ctx.lineTo(lFX,lFBot);ctx.stroke();
+      // Right face vertical
+      const rFX=w*.72;
+      const rFTop=vpY+(rFX-vpR)*(cTop-vpY)/(cX-vpR);
+      const rFBot=vpY+(rFX-vpR)*(cBot-vpY)/(cX-vpR);
+      ctx.beginPath();ctx.moveTo(rFX,rFTop);ctx.lineTo(rFX,rFBot);ctx.stroke();
+      // Windows hint left face
+      for(let i=0;i<2;i++){
+        const wx=lFX+(cX-lFX)*(.25+i*.35);
+        const wT=lFTop+(cX-wx)/(cX-lFX)*(cTop-lFTop)*1.2+h*.05;
+        const wB=wT+h*.12;
+        ctx.strokeRect(wx-8,wT,16,wB-wT);
+      }
+      ctx.setLineDash([]);
+      ctx.fillStyle='rgba(193,68,14,0.25)';
+      ctx.font='11px Jost,sans-serif';
+      ctx.fillText('← Trace over me in a darker colour →',w*.22,h*.93);
+    }
+  },
+  isobox:{
+    grid:'iso',
+    label:'Isometric Box — Architecture Mass Study',
+    guided:[
+      'Step 1: Isometric drawing uses 30° angles. The grid already shows you these lines. Pick the Line tool (or press L).',
+      'Step 2: Draw a vertical line in the centre of the canvas — this is the front top edge of your box.',
+      'Step 3: From the top of that vertical, draw two lines at 30° going left and right along the isometric grid lines. These are the top face edges.',
+      'Step 4: From the bottom of your centre vertical, draw lines at 30° going left and right — these are the bottom front edges.',
+      'Step 5: Close the box: draw two more verticals at the ends of your 30° lines.',
+      'Step 6: Add windows and doors on the visible faces by following the 30° grid. All lines must be either vertical or at 30°.',
+      'Step 7: Shade the three visible faces differently — lightest on top, medium on one side, darkest on the other. Use the marker tool at low opacity.',
+      'Superb! Isometric mass studies are a key NATA skill. Save your drawing.',
+    ],
+    draw(c,ctx){
+      const w=c.width,h=c.height;
+      const ang=30*Math.PI/180;
+      const bW=w*.26,bH=h*.35,bD=w*.18;
+      const ox=w*.5,oy=h*.65;
+      ctx.strokeStyle='rgba(28,23,20,0.18)';
+      ctx.lineWidth=1.2;ctx.setLineDash([5,4]);
+      // Front face
+      ctx.strokeRect(ox-bW/2,oy-bH,bW,bH);
+      // Top face
+      const pts={
+        tl:[ox-bW/2,oy-bH],
+        tr:[ox+bW/2,oy-bH],
+        trr:[ox+bW/2+bD*Math.cos(ang),oy-bH-bD*Math.sin(ang)],
+        tll:[ox-bW/2+bD*Math.cos(ang),oy-bH-bD*Math.sin(ang)],
+      };
+      ctx.beginPath();ctx.moveTo(pts.tl[0],pts.tl[1]);ctx.lineTo(pts.tll[0],pts.tll[1]);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(pts.tr[0],pts.tr[1]);ctx.lineTo(pts.trr[0],pts.trr[1]);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(pts.tll[0],pts.tll[1]);ctx.lineTo(pts.trr[0],pts.trr[1]);ctx.stroke();
+      // Right face
+      ctx.beginPath();ctx.moveTo(pts.tr[0],pts.tr[1]);ctx.lineTo(pts.tr[0],oy);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(pts.trr[0],pts.trr[1]);ctx.lineTo(pts.trr[0],oy-bD*Math.sin(ang));ctx.stroke();
+      ctx.beginPath();ctx.moveTo(pts.tr[0],oy);ctx.lineTo(pts.trr[0],oy-bD*Math.sin(ang));ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle='rgba(193,68,14,0.25)';
+      ctx.font='11px Jost,sans-serif';
+      ctx.fillText('← Trace over me in a darker colour →',w*.22,h*.93);
+    }
+  },
+  staircase:{
+    grid:'2pp',
+    label:'Staircase — 2-Point Perspective',
+    guided:[
+      'Step 1: A staircase in 2-point perspective — all horizontal lines go to VPL or VPR on the horizon.',
+      'Step 2: Draw the bottom step first — a rectangular slab using lines to both VPs with a front vertical edge.',
+      'Step 3: Stack the second step on top — shift up and slightly back. The nosing edge is another vertical.',
+      'Step 4: Repeat for 4–5 steps total, each one going further back and higher up.',
+      'Step 5: Add the side walls converging to VPL. Add a handrail line following the stair slope.',
+      'Step 6: Shade the top (tread) face lighter and the front (riser) face darker. Use hatching on the risers.',
+      'Done! Staircases are a recurring NATA question. Practice until this feels natural.',
+    ],
+    draw(c,ctx){
+      const w=c.width,h=c.height;
+      const vpY=h*.40,vpL=w*-.12,vpR=w*1.12;
+      ctx.strokeStyle='rgba(28,23,20,0.15)';
+      ctx.lineWidth=1;ctx.setLineDash([4,4]);
+      const steps=5,sH=h*.07,sD=w*.055;
+      let x0=w*.35,y0=h*.78;
+      for(let i=0;i<steps;i++){
+        // Front riser vertical
+        const riserT=y0-sH;
+        ctx.beginPath();ctx.moveTo(x0,y0);ctx.lineTo(x0,riserT);ctx.stroke();
+        // Top tread to VPR
+        ctx.beginPath();ctx.moveTo(x0,riserT);
+        const tx2=x0+sD*2;const ty2=vpY+(tx2-vpR)*(riserT-vpY)/(x0-vpR);
+        ctx.lineTo(tx2,ty2);ctx.stroke();
+        // Right edge vertical
+        ctx.beginPath();ctx.moveTo(tx2,ty2);
+        const by2=vpY+(tx2-vpR)*(y0-vpY)/(x0-vpR);
+        ctx.lineTo(tx2,by2);ctx.stroke();
+        // Bottom to VPR
+        ctx.beginPath();ctx.moveTo(x0,y0);ctx.lineTo(tx2,by2);ctx.stroke();
+        x0=tx2;y0=riserT;
+      }
+      ctx.setLineDash([]);
+      ctx.fillStyle='rgba(193,68,14,0.25)';
+      ctx.font='11px Jost,sans-serif';
+      ctx.fillText('← Trace over me in a darker colour →',w*.22,h*.93);
+    }
+  },
+  arch:{
+    grid:'1pp',
+    label:'Archway / Arch — 1-Point Perspective',
+    guided:[
+      'Step 1: An arched corridor in 1-point perspective — the vanishing point is at the centre, horizon line at ~42%.',
+      'Step 2: Draw the front arch: two vertical walls, then a semicircle on top connecting them. Use the Circle tool.',
+      'Step 3: From the sides of the arch opening, draw receding lines going to the VP — these are the corridor walls.',
+      'Step 4: Draw another, smaller arch further back at the VP. This creates the tunnel effect.',
+      'Step 5: Add floor tiles with horizontal lines between the receding floor lines.',
+      'Step 6: Add light source — shade the arch walls darkest at the edges, lighter near centre. Use charcoal at low opacity.',
+      'Beautifully done! Arched corridors test both drawing skill and spatial understanding — both tested in NATA.',
+    ],
+    draw(c,ctx){
+      const w=c.width,h=c.height;
+      const vpX=w/2,vpY=h*.42;
+      ctx.strokeStyle='rgba(28,23,20,0.16)';
+      ctx.lineWidth=1.2;ctx.setLineDash([5,4]);
+      // Front arch opening
+      const aL=w*.28,aR=w*.72,aBot=h*.82,aMid=h*.28;
+      const aRad=(aR-aL)/2;const aCX=(aL+aR)/2,aCY=aMid+aRad;
+      ctx.beginPath();ctx.moveTo(aL,aBot);ctx.lineTo(aL,aCY);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(aR,aBot);ctx.lineTo(aR,aCY);ctx.stroke();
+      ctx.beginPath();ctx.arc(aCX,aCY,aRad,Math.PI,0);ctx.stroke();
+      // Floor lines to VP
+      ctx.beginPath();ctx.moveTo(aL,aBot);ctx.lineTo(vpX,vpY);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(aR,aBot);ctx.lineTo(vpX,vpY);ctx.stroke();
+      // Side wall lines to VP
+      ctx.beginPath();ctx.moveTo(aL,aCY);ctx.lineTo(vpX,vpY);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(aR,aCY);ctx.lineTo(vpX,vpY);ctx.stroke();
+      // Back arch (smaller, at VP)
+      const bScale=.35;
+      const bL=vpX-(aRad*bScale),bR=vpX+(aRad*bScale),bCY=vpY+(aCY-vpY)*.1;
+      ctx.beginPath();ctx.moveTo(bL,vpY+(aBot-vpY)*.08);ctx.lineTo(bL,bCY);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(bR,vpY+(aBot-vpY)*.08);ctx.lineTo(bR,bCY);ctx.stroke();
+      ctx.beginPath();ctx.arc(vpX,bCY,aRad*bScale,Math.PI,0);ctx.stroke();
+      // Floor tiles
+      for(let i=1;i<6;i++){
+        const ty=aBot-(i/6)*(aBot-vpY);
+        const tx1=aL+(vpX-aL)*(i/6);const tx2=aR-(aR-vpX)*(i/6);
+        ctx.beginPath();ctx.moveTo(tx1,ty);ctx.lineTo(tx2,ty);ctx.stroke();
+      }
+      ctx.setLineDash([]);
+      ctx.fillStyle='rgba(193,68,14,0.25)';
+      ctx.font='11px Jost,sans-serif';
+      ctx.fillText('← Trace over me in a darker colour →',w*.22,h*.93);
+    }
+  }
+};
+
+let guidedActive=false,guidedTemplateKey=null,guidedStepIdx=0;
+
+function loadTemplate(key){
+  const tmpl=TEMPLATES[key];
+  if(!tmpl)return;
+  guidedTemplateKey=key;
+  guidedStepIdx=0;
+  // Set matching grid
+  const gridBtns=document.querySelectorAll('.persp-bar .pb');
+  gridBtns.forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.persp-bar .pb').forEach(b=>{
+    if((b.textContent.trim()==='1-Point'&&tmpl.grid==='1pp')||
+       (b.textContent.trim()==='2-Point'&&tmpl.grid==='2pp')||
+       (b.textContent.trim()==='Isometric'&&tmpl.grid==='iso')){
+      b.classList.add('active');b.setAttribute('aria-pressed','true');
+    }
+  });
+  perspGrid=tmpl.grid;
+  clearCanvas();
+  drawPG();
+  // Draw template on canvas in ghost style
+  ctx.save();
+  tmpl.draw(canvas,ctx);
+  ctx.restore();
+  saveState();
+  // Update guided panel
+  if(guidedActive){
+    updateGuidedPanel();
+  }
+  document.getElementById('toolStatus').textContent=`Template loaded: "${tmpl.label}" — trace over in a darker colour`;
+}
+
+function toggleGuided(){
+  guidedActive=!guidedActive;
+  const panel=document.getElementById('guidedPanel');
+  const btn=document.getElementById('guidedBtn');
+  panel.style.display=guidedActive?'block':'none';
+  btn.classList.toggle('active',guidedActive);
+  if(guidedActive){
+    updateGuidedPanel();
+    document.getElementById('guidedNext').disabled=false;
+  }
+}
+
+function updateGuidedPanel(){
+  const tmpl=guidedTemplateKey?TEMPLATES[guidedTemplateKey]:null;
+  if(!tmpl){
+    document.getElementById('guidedStepText').textContent='Load a template above to begin guided practice.';
+    document.getElementById('guidedCounter').textContent='';
+    document.getElementById('guidedNext').disabled=true;
+    document.getElementById('guidedPrev').disabled=true;
+    return;
+  }
+  const steps=tmpl.guided;
+  const step=steps[Math.min(guidedStepIdx,steps.length-1)];
+  document.getElementById('guidedStepText').textContent=step;
+  document.getElementById('guidedCounter').textContent=`${Math.min(guidedStepIdx+1,steps.length)} / ${steps.length}`;
+  document.getElementById('guidedPrev').disabled=guidedStepIdx===0;
+  document.getElementById('guidedPrev').style.opacity=guidedStepIdx===0?'.3':'1';
+  document.getElementById('guidedNext').disabled=guidedStepIdx>=steps.length-1;
+  document.getElementById('guidedNext').style.opacity=guidedStepIdx>=steps.length-1?'.3':'1';
+}
+
+function guidedStep(dir){
+  if(!guidedTemplateKey)return;
+  const steps=TEMPLATES[guidedTemplateKey].guided;
+  guidedStepIdx=Math.max(0,Math.min(steps.length-1,guidedStepIdx+dir));
+  updateGuidedPanel();
+}
 </script>
+
 </body>
 </html>
-
